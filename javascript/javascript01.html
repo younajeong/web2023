@@ -30,6 +30,15 @@
                 <li><a href="javascript10.html">요소 객체</a></li>
                 <li><a href="javascript11.html">이벤트 객체</a></li>
             </ul>
+            <ul class="last">
+                <li><a href="javascript12.html">데이터 효과</a></li>
+                <li><a href="javascript13.html">검색 효과</a></li>
+                <li><a href="javascript14.html">퀴즈 효과</a></li>
+                <li><a href="javascript15.html">마우스 효과</a></li>
+                <li><a href="javascript16.html">슬라이드 효과</a></li>
+                <li><a href="javascript17.html">패럴래스 효과</a></li>
+                <li><a href="javascript18.html">게임 효과</a></li> 
+            </ul>
         </nav>
     </header>
     <!-- //header -->
@@ -64,6 +73,7 @@
     var x = 100;             //변수 x에 숫자 100을 저장함
     var y = 200;             //변수 y에 숫자 200을 저장함
     var z = "javascript";    //변수 z에 문자 "javascript"를 저장함
+    
     console.log(x);
     console.log(y);
     console.log(z);
@@ -140,7 +150,7 @@
                                 600<br>
                                 "javascriptreact"
                             </div>
-                           </details>
+                        </details>
                     </div>
 
                     <div class="notice">
@@ -158,28 +168,28 @@
     const y = 200;
     const z = "javascript"
 
-    // x += 300;     // Assignment to constant variable.
-    // y += 400;
-    // z += "react";
+     x += 300;     
+     y += 400;
+     z += "react";
     
     console.log(x);
     console.log(y);
     console.log(z);
 
-//const x = 100, y = 200, z = "javascript";   //숫자,문자,블린(논리),undefined,null(값이 없는것),객체,배열,심벌 --> 자료형(typeof)
+    const x = 100, y = 200, z = "javascript";   
 
-//let x = 100;
-//let y = 200;
-//let z = "javascript";
+    let x = 100;
+    let y = 200;
+    let z = "javascript";
 
-//x -= 1000;      // 100 - 1000 = -900
+    x -= 1000;      // 100 - 1000 = -900
 
-//x += 1000;      // -900 + 1000 = 100
+    x += 1000;      // -900 + 1000 = 100
 
 //console.log(x, y, z);
 }
 </code></pre>
-                    </div>
+                </div>
                     <div class="result">
                         <details>
                             <summary>결과 확인하기</summary>
@@ -188,9 +198,13 @@
                                 200<br>
                                 "javascript"
                             </div>
-                           </details>
-                    </div>
+                        </details>
+                    </div>  
                     
+                    <div class="notice">
+                        <h4>자료형(typeof) : 프로그램에서 처리하는 자료의 유형을 지정하는 자료의 형태</h4>
+                        <p>변숫자,문자,블린(논리),undefined,null(값이 없는것),객체,배열,심벌</p>
+                    </div>
                 </div>
                 <!-- //sample04 -->
                 <div id="sample05" class="sample">
@@ -360,14 +374,14 @@
                         <p>{}를 이용해서 객체 값을 구할 수 있지만 양이 많아진다는 단점이 있습니다.</p>
                         <div class = "script">
 <pre><code>{
-const obj = {};
-obj.a = 100;
-obj.b = 200;
-obj.c = "javascript";
+    const obj = {};
+    obj.a = 100;
+    obj.b = 200;
+    obj.c = "javascript";
 
-console.log(obj.a);
-console.log(obj.b);
-console.log(obj.c);     // 
+    console.log(obj.a);
+    console.log(obj.b);
+    console.log(obj.c);     
 }
 </code></pre>
                 </div>
@@ -387,13 +401,13 @@ console.log(obj.c);     //
                     <p>{}를 이용해서 객체를 구할 수 있습니다.</p>
                     <div class = "script">
 <pre><code>{
-//const x = 100;  // 변수
-//const arr = [100, 200, "javascript"];    // 배열
-const obj = {a:100, b:200, c:"javascript"};  //객체
+    const x = 100;  // 변수
+    const arr = [100, 200, "javascript"];    // 배열
+    const obj = {a:100, b:200, c:"javascript"};  //객체
 
-console.log(obj.a);
-console.log(obj.b);
-console.log(obj.c); 
+    console.log(obj.a);
+    console.log(obj.b);
+    console.log(obj.c); 
 }
 </code></pre>
                 </div>
@@ -405,7 +419,7 @@ console.log(obj.c);
                                 200<br>
                                 "javascript"
                             </div>
-                           </details>
+                        </details>
                     </div>  
                 </div>
                 <!-- sample12 -->
@@ -414,22 +428,22 @@ console.log(obj.c);
                     <p>키와 값을 이용한 표현방법들</p>
                     <div class="script">
 <pre><code>{
-const brr = new Array();
-const crr = new Array(200, "react", false); //  옛날방식
-const drr = [];
-const err = [300, "arrat", true];
+    const brr = new Array();
+    const crr = new Array(200, "react", false); //  옛날방식
+    const drr = [];
+    const err = [300, "arrat", true];
 
-brr[0] = 100;
-brr[1] = "javascript";
-brr[2] = "true";
-drr[0] = 100;
-drr[1] = "javascript";
-drr[2] = "true";
+    brr[0] = 100;
+    brr[1] = "javascript";
+    brr[2] = "true";
+    drr[0] = 100;
+    drr[1] = "javascript";
+    drr[2] = "true";
 
-console.log(brr[0],brr[1],brr[2]);
-console.log(crr[0],crr[1],crr[2]);  
-console.log(drr[0],drr[1],drr[2]);  
-console.log(err[0],err[1],err[2]); 
+    console.log(brr[0],brr[1],brr[2]);
+    console.log(crr[0],crr[1],crr[2]);  
+    console.log(drr[0],drr[1],drr[2]);  
+    console.log(err[0],err[1],err[2]); 
 } 
 </code></pre>
                 </div>
@@ -451,15 +465,15 @@ console.log(err[0],err[1],err[2]);
                     <p>객체는 배열 방식을 그대로 사용할 수 있다.</p>
                     <div class="script">
 <pre><code>{
-const obj = new Object();
+    const obj = new Object();
 
-obj[0] = 100;
-obj[1] = 200;
-obj[2] = "javascript";
+    obj[0] = 100;
+    obj[1] = 200;
+    obj[2] = "javascript";
 
-console.log(obj[0]);
-console.log(obj[1]);
-console.log(obj[2]);
+    console.log(obj[0]);
+    console.log(obj[1]);
+    console.log(obj[2]);
 }
 </code></pre>
                </div>
@@ -480,15 +494,15 @@ console.log(obj[2]);
                     <p>객체에 괄호만 존재해도 값을 구할 수 있다.</p>
                     <div class="script">
 <pre><code>{
-const obj = new Object();
+    const obj = new Object();
 
-obj.a = 100;
-obj.b = 200;
-obj.c = "javascript"
+    obj.a = 100;
+    obj.b = 200;
+    obj.c = "javascript"
 
-console.log(obj.a);
-console.log(obj.b);
-console.log(obj.c);
+    console.log(obj.a);
+    console.log(obj.b);
+    console.log(obj.c);
 }
 </code></pre>
                 </div>
@@ -509,15 +523,15 @@ console.log(obj.c);
                     <p>중괄호를 이용해서 객체 값을 구할 수 있다. 객체 구할 때 보통 쓰는 방법</p>
                     <div class="script">
 <pre><code>{
-const obj = {};
+    const obj = {};
 
-obj.a = 100;
-obj.b = 200;
-obj.c = "javascript"
+    obj.a = 100;
+    obj.b = 200;
+    obj.c = "javascript"
 
-console.log(obj.a);
-console.log(obj.b);
-console.log(obj.c);
+    console.log(obj.a);
+    console.log(obj.b);
+    console.log(obj.c);
 }
 </code></pre>
                     </div>
@@ -538,11 +552,11 @@ console.log(obj.c);
                     <p>순서가 바뀌어서 써진 객체 표현방법 , ;는 마지막을 표시할 때 사용하지 않아도 된다.</p>
                     <div class="script">
 <pre><code>{
-const obj = {a:100, b:200, c:"javascript"}; 
+    const obj = {a:100, b:200, c:"javascript"}; 
 
-console.log(obj.a);
-console.log(obj.b);
-console.log(obj.c);
+    console.log(obj.a);
+    console.log(obj.b);
+    console.log(obj.c);
 }
 </code></pre>
                 </div>
@@ -563,14 +577,14 @@ console.log(obj.c);
                     <p>배열 안에 객체가 있을 때</p>
                     <div class="script">
 <pre><code>{
-const obj = [
-{a:100, b:200},
-{c:"javascript"}
-];
+    const obj = [
+    {a:100, b:200},
+    {c:"javascript"}
+    ];
 
-console.log(obj[0].a);
-console.log(obj[0].b);
-console.log(obj[1].c); 
+    console.log(obj[0].a);
+    console.log(obj[0].b);
+    console.log(obj[1].c); 
 }
 </code></pre>
                     </div>
@@ -591,21 +605,19 @@ console.log(obj[1].c);
                     <p>반대의 형태 -> 객체 안에 배열이 들어간 형태</p>
                     <div class="script">
 <pre><code>{
-const obj = {
-a: 100,
-b: [200,300],
-c: {x: 400, y: 500},
-d: "javascript" 
+    const obj = {
+    a: 100,
+    b: [200,300],
+    c: {x: 400, y: 500},
+    d: "javascript" 
+    }
 
-}
-console.log(obj.a);
-console.log(obj.b[0]);
-console.log(obj.b[1]);
-console.log(obj.c.x);
-console.log(obj.c.y);
-console.log(obj.d);
-
-obj 쓴 후 객체 a , obj 쓴후 객체 쓰고 배열 가져오기 obj쓴 후 객체 , 객체 
+    console.log(obj.a);
+    console.log(obj.b[0]);
+    console.log(obj.b[1]);
+    console.log(obj.c.x);
+    console.log(obj.c.y);
+    console.log(obj.d);     //obj 쓴 후 객체 a , obj 쓴후 객체 쓰고 배열 가져오기 obj쓴 후 객체 , 객체 
 </code></pre>
             </div>
                 <div class="result">
@@ -628,15 +640,15 @@ obj 쓴 후 객체 a , obj 쓴후 객체 쓰고 배열 가져오기 obj쓴 후 �
                     <p>체 안에 변수를 저장한 것  a대신에 변수를 넣어준 것 키값 생략</p>
                     <div class="script">
 <pre><code>{
-const a = 100;
-const b = 200;
-const c = "javascript";
+    const a = 100;
+    const b = 200;
+    const c = "javascript";
 
-const obj = {a, b, c}; // {},[]객체나 변수가 더 들어올 수 있음
+    const obj = {a, b, c}; // {},[]객체나 변수가 더 들어올 수 있음
 
-console.log(a);
-console.log(b);
-console.log(c);
+    console.log(a);
+    console.log(b);
+    console.log(c);
 }
 </code></pre>
              </div>
@@ -657,31 +669,40 @@ console.log(c);
                 <p>함수가 들어가는 것 , 객체 안에는 실행문이 나올 수 있다.</p>
                 <div class="script">
 <pre><code>{
-const obj = {
-a: 100,
-b: [200, 300],
-c: "javascript",
-d: function(){
-console.log("javascript가 실행되었습니다.");
-}
-}
-console.log(obj.a);
-console.log(obj.b[0]);
-console.log(obj.b[1]);
-console.log(obj.b[2]); //undifind
-console.log(obj.c);
-console.log(obj.d); //(이렇게 쓰면 안된다)
-obj.d();
+    const obj = {
+        a: 100,
+        b: [200, 300],
+        c: "javascript",
+        d: function(){
+            console.log("javascript가 실행되었습니다.");
+        },
+        e: function(){
+            console.log( objc + "가 실행되었습니다.");
+        },
+        f: function(){
+        console.log( thisc + "가 실행되었습니다.");
+        }
+    }
 
-// 변수 : 데이터 하나 저장
-// 상수 : 변하지 않는 것
-// 배열 : 데이터 저장 두개 이상 무제한 저장
-// 객체 : 키와 값으로 저장
-// 배열 & 객체 = 저장문 
+    console.log(obj.a);
+    console.log(obj.b[0]);
+    console.log(obj.b[1]);
+    console.log(obj.b[2]); //undifind
+    console.log(obj.c);
+    console.log(obj.d); //(이렇게 쓰면 안된다)
+    obj.d();
+    obj.e();
+    obj.f();
 
-// 함수 : 실행문 (너무 난잡, 기능 추가 확대할때 불편) , 클래스보다 쉬움
+    // 변수 : 데이터 하나 저장
+    // 상수 : 변하지 않는 것
+    // 배열 : 데이터 저장 두개 이상 무제한 저장
+    // 객체 : 키와 값으로 저장
+    // 배열 & 객체 = 저장문 
 
-// 클래스 : 함수의 집합체 (함수의 디테일 버전), 자바의 개념
+    // 함수 : 실행문 (너무 난잡, 기능 추가 확대할때 불편) , 클래스보다 쉬움
+
+    // 클래스 : 함수의 집합체 (함수의 디테일 버전), 자바의 개념
 }
 </code></pre>
                 </div>
@@ -742,6 +763,12 @@ obj.d();
                 c: "javascript",
                 d: function(){
                     console.log("javascript가 실행되었습니다.");
+                },
+                e: function(){
+                    console.log( objc + "가 실행되었습니다.");
+                },
+                f: function(){
+                    console.log( thisc + "가 실행되었습니다.");
                 }
             }
             console.log(obj.a);
@@ -751,6 +778,8 @@ obj.d();
             console.log(obj.c);
             console.log(obj.d); //(x)
             obj.d();
+            obj.e();
+            obj.f();
         }
         
     </script>
