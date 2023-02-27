@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="192x192"  href="/assets/ico/javascript192x192.png">
 </head>
 <body>
-      <header id="header">
+    <header id="header">
             <h1><a href="index.html">javascript</a></h1>
             <nav>
                 <ul>
@@ -41,45 +41,48 @@
                     <li><a href="javascript18.html">게임 효과</a></li> 
                 </ul>
             </nav>
-        </header>
-        <!-- header -->
+    </header>
+    <!-- header -->
     
         <main id="main">
             <div class="container">
                 <div class="main__menu">
-                    <ul>
-                        <li><a href="#">01. 데이터 이펙트 : 1부터 100까지 출력하기</a></li>
-                        <li><a href="#">01. 데이터 이펙트 : 1부터 50까지 출력하기</a></li>
-                    </ul>
+                    <li><a href="#">01. 데이터 이펙트 : 1부터 100까지 출력하기</a></li>
+                    <li><a href="#">02. 데이터 이펙트 : 0부터 50까지 출력하기</a></li>
+                    <li><a href="#">03. 데이터 이펙트 : 1부터 100까지 짝수만 출력하기</a></li>
+                    <li><a href="#">04. 데이터 이펙트 : 1부터 100까지 5의 배수 출력하기</a></li>
+                    <li><a href="#">05. 데이터 이펙트 : 1부터 100까지 짝수(파란색) 홀수(빨간색) 출력하기</a></li>
+                    <li><a href="#">06. 데이터 이펙트 : for문을 이용해서 100칸 테이블 만들기</a></li>
+                    <li><a href="#">07. 데이터 이펙트 : 중첩 for문을 이용해서 구구단 만들기</a></li>
                 </div>
-                 <div class="main__sample">
-                 <div id="sample01" class="sample">
-                    <h3>01. 데이터 이펙트 : 1부터 100까지 출력하기</h3>
-                    <p>for문을 이용해서 1-100까지 출력하는 예제입니다.</p>
+                    <div class="main__sample">
+                        <div id="sample01" class="sample">
+                        <h3>01. 데이터 이펙트 : 1부터 100까지 출력하기</h3>
+                        <p>for문을 이용해서 1-100까지 출력하는 예제입니다.</p>
 <pre class="line-numbers"><code class="language-js">for(let i=1; i&lt=100; i++)
 console.log(i)}
 
 // 결과 값 1,2,3,4,5,6,~~~100
 // i=1 i는 1부터 100까지 값을 출력 i는 +1씩 증가 
 </code></pre>
-                 </div>
-                 <!-- sample 01 -->
+                    </div>
+                    <!-- // sample 01 -->
                 
-                 <div id="sample02" class="sample">
-                    <h3>02. 데이터 이펙트 : 0부터 50까지 출력하기</h3>
-                    <p>for문을 이용해서 0-50까지 출력하는 예제입니다.</p>
+                    <div id="sample02" class="sample">
+                        <h3>02. 데이터 이펙트 : 0부터 50까지 출력하기</h3>
+                        <p>for문을 이용해서 0-50까지 출력하는 예제입니다.</p>
 <pre class="line-numbers"><code class="language-js">for(let i=0; i&lt=50; i++){    
 console.log(i)}
 
 //결과 값 1,2,3,4,5,~50 까지
 //i=0 i는 0부터 50까지 값을 출력 가능하며 i는 +1씩 증가합니다.
 </code></pre>
-                 </div>
-                 <!-- sample 02 -->
+                    </div>
+                    <!-- // sample 02 -->
 
-                 <div id="sample03" class="sample">
-                    <h3>03. 데이터 이펙트 : 0부터 100까지 짝수만 출력하기</h3>
-                    <p>for문을 이용해서 0-100까지 짝수만 출력하는 예제입니다.</p>
+                    <div id="sample03" class="sample">
+                        <h3>03. 데이터 이펙트 : 0부터 100까지 짝수만 출력하기</h3>
+                        <p>for문을 이용해서 0-100까지 짝수만 출력하는 예제입니다.</p>
 <pre class="line-numbers"><code class="language-js">for(let i=0; i&lt=100; i+=2){     // i+2 i가 2씩 증가
 console.log(i)}
 
@@ -87,12 +90,12 @@ console.log(i)}
 //증감 연산자를 이용 
 //i는 0부터 100까지 값을 출력하며 1씩이 아닌2씩 증가하여 배수로만 값이 출력 됩니다.  
 </code></pre>
-                 </div>
-                 <!-- sample 03 -->
+                    </div>
+                    <!-- // sample 03 -->
 
-                 <div id="sample04" class="sample">
-                    <h3>04. 데이터 이펙트 : 1부터 100까지 5의 배수만 출력하기</h3>
-                    <p>for문을 이용해서 1-100까지 5의 배수만 출력하는 예제입니다.</p>
+                    <div id="sample04" class="sample">
+                        <h3>04. 데이터 이펙트 : 1부터 100까지 5의 배수만 출력하기</h3>
+                        <p>for문을 이용해서 1-100까지 5의 배수만 출력하는 예제입니다.</p>
 <pre class="line-numbers"><code class="language-js">//증감 연산자 이용 방법
 for(let i=1; i&lt=100; i+=5){       
 console.log(i)}
@@ -113,57 +116,79 @@ console.log(i)}
 
 //i는 1부터 100까지의 값을 출력하며 5의 배수가 뜹니다.
 </code></pre>
-                 </div>
-            
-            </div>
-        </div>
+                    </div>  
+                    <!-- // sample 04 -->
+
+                    <div id="sample05" class="sample">
+                        <h3>05. 데이터 이펙트 : 1부터 100까지 짝수(파란색) 홀수(빨간색)</h3>
+                        <p>for문을 이용해서 1-100까지 짝수(파란색) 홀수 (빨간색) 출력하는 예제입니다.</p>
+<pre class="line-numbers"><code class="language-js">for( let i=1; i<=100; i++){
+if( i % 2 == 0 ){   //중괄호 써주기
+
+    document.write("&ltspan style ='color:blue'&gt"+i+"&lt/span&gt"); 
+    }    
+}
+
+if( i % 2 == 1 ){   //중괄호 써주기
+    document.write("&ltspan style ='color:red'&lt"+i+"&gt/span&gt"); 
+
+//1-100까지 짝수는 파란색 홀수는 빨간색이 뜹니다. 
+}
+</pre></code>                       
+                    </div>
+                    <!-- // sample05 -->
+                
+                    <div id="sample06" class="sample">
+                        <h3>06. 데이터 이펙트 : for문을 이용해서 100칸 테이블 만들기</h3>
+                        <p>for문을 이용해서 100칸 테이블 만드는 예제입니다.</p>
+<pre class="line-numbers"><code class="language-js">let table = "&lttable border=1&gt";
+
+for(let i=1; i&lt=10; i++){
+    table += "&lttr&gt"
+
+    for(let j=1; j&lt=10; j++){
+    table += "&lttd&gt" + j + "&lt/td&gt"
+    }
+
+    table += "&lt/tr&gt" 
+}
+table += "&lt/table&gt"; 
+
+document.write(table); 
+
+//1부터 100까지 써있는 100칸짜리 표가 만들어집니다.  
+</pre></code>
+                    </div>
+                    <!-- // sample06 -->
+
+                    <div id="sample07" class="sample">
+                        <h3>07. 데이터 이펙트 : 중첩 for문을 이용해서 구구단 만들기</h3>
+                        <p>중첩 for문을 이용해서 구구단 만드는 예제입니다.</p>
+<pre class="line-numbers"><code class="language-js">for(let i=2; i&lt=9; i++){
+    document.write(i + "단","&ltbr&gt");    
+
+for(let j=1; j&lt=9; j++){
+    document.write(i + "*" + j + "=" + i*j);    
+    document.write("&ltbr&gt");
+    }
+
+document.write("&ltbr&gt&ltbr&gt");
+}  
+
+//2단부터 9단까지 구구단이 나옵니다.
+// i=2, *=곱하기 ,j=1 2*1=2는 결국 i*j  
+</pre></code>
+                    </div>
+                    <!-- // sample07 -->
         </main>
-        <!-- main  -->
-    
+        <!-- main  -->    
         <footer id="footer">
             <a href="mailto:jeongyouna_@naver.com">jeongyouna_@naver.com</a>
         </footer>
         <!-- footer -->
 
         <script src="assets/js/prism.js"></script>
-        <script>
-            // 01. 1부터 100까지 출력하기
-            //for(let i=1; i<=100; i++){
-                //console.log(i)
-            //}
-
-            // 02. 0부터 50까지 출력하기
-            //for(let i=0; i<=50; i++){       //i = i+1 
-                //console.log(i)a
-            //}
-
-            // 03. 0부터 100까지 짝수만 출력하기
-            //for(let i=0; i<=100; i+=2){     //i = i+2 i가 2씩 증가한다
-                //console.log(i)
-            //}
-
-            // 04.1부터 100까지 5의 배수만 출력하기
-            for(let i=0; i<=100; i+=5){
-                console.log(i)
-            }
-            
-            for(let i=1; i<=100; i++){
-                if( i == 50){
-                    
-                    //alert("50이다"); 50일 때 경고해달라는 조건문 달아주기
-                }
-                console.log(i)
-            }
-
-            for(let i=1; i<=100; i++){
-                if( i % 5 == 0){    
-                    console.log(i)  //5의 배수 구하는 방법 5를 1로 나누면 0도 5의 배수이므로 0도 같다
-                }
-                
-            }
-        </script>
-        
-    </html>
-    
+    <script>
+    </script>        
 </body>
 </html>    
