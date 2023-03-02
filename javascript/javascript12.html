@@ -226,41 +226,26 @@ document.write(table);
 
         <script src="assets/js/prism.js"></script>
     <script>
-        // //테이블 25칸 짝수 빨강 홀수 파랑
+       //테이블 25칸 짝수 빨강 홀수 파랑
 
-        // let table = "<table border = '1'>";
+         let table = "<table border = '1'>";
             
-        // for(let i=1; i<=5; i++){
-        //      table += "<tr>";
-
-        //      for(let j=1; j<=5; j++){
-        //         table += "<td>" + j + "</td>";
-        //     }
-        //      table += "</tr>";
-        //  }
-        // table += "</table>";
-
-        //3의배수를 구하고 그안에 5의배수는 빨간색 
-
-        let table = "<table border = '1'>";
-        let count = 0; 
-            
-            for(let i=0; i<5; i++){
-                 table += "<tr>";   
-                for(let j=0; j<5; j++){
-                    count+=3;
-                    if(count % 5 == 0){
-                        table += "<td style='color:red'>" + count + "</td>";
-                    }else {
-                        table += "<td>" + count + "</td>";
-                    }                  
-                }
-                 table += "</tr>";
-             }
-            table += "</table>";
+         for(let i=1; i<=5; i++){
+             table += "<tr>";
         
+              for(let j=1; j<=5; j++){
+                if(i % 2 == 0){                    
+                }else{
+                }table += "<td span style='color:red'></span>" + i + "</td>";
+                table += "<td span style='color:blue'></span>" + j + "</td>";
+                
+                
+             }
+             table += "</tr>";
+         }
+        table += "</table>";
 
-        document.write(table);
+        
     </script>        
 </body>
 </html>    

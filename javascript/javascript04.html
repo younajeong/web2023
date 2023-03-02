@@ -363,9 +363,8 @@
 
     for(let i=0; i&lt;=num.length; i++){
         document.write(num[i]);
-        sum += num[i];
+        sum += i;
     }
-    document.write("&lt;br&gt")
     document.write(sum)               
 }
 </code></pre>
@@ -501,49 +500,6 @@
     <script>hljs.highlightAll();</script>
 
     <script>
-        function isPositive(n) {
-            if (n > 0) {
-                alert(`${n}은 양수입니다.`);    //매개 변수 함수를 이용해서 if문을 실행함
-            } else if (n < 0) {
-                alert(`${n}은 음수입니다.`);
-            } else {
-                alert(`${n}은 0입니다.`);
-            }
-        }
-
-        const number = parseInt(prompt('숫자를 입력하세요.'));
-
-        if (!isNaN(number)) {       //숫자인지 문자인지 (매개변수 함수가 숫자인지 문자인지 구분하는 함수 )
-            isPositive(number);     //양수인지 음수인지
-            
-        }
-        //상수 넘버를 받은 후 매개변수 함수를 이용해서 숫자인지 문자인지 양수인지 음수인지 구분해 줍니다.
-
-
-        //문제 2 선언함수 리턴값이있는 매개변수는 2개를 가진다.
-        function getGCD(n, m) {
-            
-            let max = n > m ? n : m;    //n과 m이 큰지 확인후 작은걸 max값으로 받아옵니다.
-            //  if(n  > m ){
-            //     max = n;
-            // }else{
-            //     max=m;
-            // }
-            let GCD = 0; 
-            for (let i = 1; i <= max; i++){      //max가 i보다 커야함 
-                if (n % i === 0 && m % i === 0){
-                    GCD = i;   // 최대공약수    
-                } 
-                // i 값이 1부터 입력받은 두수중 큰수까지 반복한당 
-                // n 과 m을 동시에 나눌때 나머지가 0 인 경우의 수를 gcd에 넣는다
-                //gcd는 i 값이들어가며 위 조건에 해당할때 새로운 i값을 계속 받는다. 
-            }
-            console.log("GCD__"+GCD) 
-            return GCD;}
-            //리턴 함수이기 때문에  최대 공약수 GCD를 리턴받는다.
-
-        console.log(`7과 70의 최대공약수 : ${getGCD(7,70)}`); 
-        console.log(`45과 38의 최대공약수 : ${getGCD(45, 38)}`);
 
     </script>
 </body>
