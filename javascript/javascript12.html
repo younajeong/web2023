@@ -54,6 +54,8 @@
                     <li><a href="#">05. 데이터 이펙트 : 1부터 100까지 짝수(파란색) 홀수(빨간색) 출력하기</a></li>
                     <li><a href="#">06. 데이터 이펙트 : for문을 이용해서 100칸 테이블 만들기</a></li>
                     <li><a href="#">07. 데이터 이펙트 : 중첩 for문을 이용해서 구구단 만들기</a></li>
+                    <li><a href="#">08. 데이터 이펙트 : 테이블 25칸 (짝수 빨간색 홀수 파란색)</a></li>
+                    <li><a href="#">09. 데이터 이펙트 : 테이블 25칸(3의 배수(5의 배수는 빨간색))</a></li>
                 </div>
                     <div class="main__sample">
                         <div id="sample01" class="sample">
@@ -180,6 +182,41 @@ document.write("&ltbr&gt&ltbr&gt");
 </pre></code>
                     </div>
                     <!-- // sample07 -->
+
+                    <div id="sample08" class="sample">
+                        <h3>08. 데이터 이펙트 : 테이블 25칸 (짝수 빨간색 홀수 파란색)</h3>
+                        <p>중첩 for문을 이용해서 테이블 25칸과 짝수 빨간색 홀수 파란색 만드는 문제입니다.</p>
+<pre class="line-numbers"><code class="language-js">
+</pre></code>
+                    </div>
+                    <!-- // sample08 -->
+
+                    <div id="sample09" class="sample">
+                        <h3>09. 데이터 이펙트 : 테이블 25칸(3의 배수(5의 배수는 빨간색))</h3>
+                        <p>8번을 이용하여 3의배수와 5의 배수를 구합니다.</p>
+<pre class="line-numbers"><code class="language-js">let table = "&lt;table border = '1'&gt;";
+let count = 0; 
+
+for(let i=0; i&lt;5; i++){
+table += "&lt;tr&gt;";   
+for(let j=0; j&lt;5; j++){
+count+=3;
+if(count % 5 == 0){
+    table += "&lt;td style='color:red'&gt;" + count + "&lt;/td&gt;";
+}else {
+    table += "&lt;td&gt;" + count + "&lt;/td&gt;";
+}                  
+}
+table += "&lt;/tr&gt;";
+}
+table += "&lt;/table&gt;";
+
+
+document.write(table);     
+</pre></code>
+                    </div>
+                    <!-- // sample09 -->
+
         </main>
         <!-- main  -->    
         <footer id="footer">
@@ -189,6 +226,41 @@ document.write("&ltbr&gt&ltbr&gt");
 
         <script src="assets/js/prism.js"></script>
     <script>
+        // //테이블 25칸 짝수 빨강 홀수 파랑
+
+        // let table = "<table border = '1'>";
+            
+        // for(let i=1; i<=5; i++){
+        //      table += "<tr>";
+
+        //      for(let j=1; j<=5; j++){
+        //         table += "<td>" + j + "</td>";
+        //     }
+        //      table += "</tr>";
+        //  }
+        // table += "</table>";
+
+        //3의배수를 구하고 그안에 5의배수는 빨간색 
+
+        let table = "<table border = '1'>";
+        let count = 0; 
+            
+            for(let i=0; i<5; i++){
+                 table += "<tr>";   
+                for(let j=0; j<5; j++){
+                    count+=3;
+                    if(count % 5 == 0){
+                        table += "<td style='color:red'>" + count + "</td>";
+                    }else {
+                        table += "<td>" + count + "</td>";
+                    }                  
+                }
+                 table += "</tr>";
+             }
+            table += "</table>";
+        
+
+        document.write(table);
     </script>        
 </body>
 </html>    

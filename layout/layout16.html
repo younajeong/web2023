@@ -4,88 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃 - 22일 수요일 마지막 문제 'float'방식</title>
+    <title>레이아웃16 - flex 유형 - 반응형</title>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
         }
         body {
-            background-color: #f4f0f0; 
+            background-color: #FFF3E0;
         }
         #wrap {
             width: 1200px;
-            background-color: #bb9191; 
             margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
         }
-        #header1 {
-            width: 300px;
+        #header{
+            width: 100%;
             height: 100px;
-            background-color: #ab5a5a; 
-            float: left;
+            background-color: #FFE0B2;
         }
-        #header2 {
-            width: 900px;
+        #nav{
+            width: 100%;
             height: 100px;
-            background-color: #ea5454;
-            float: left;
+            background-color: #FFCC80;
         }
-        #bener {
-            width: 1200px;
-            height: 400px;
-            background-color: #6f1919;
-            float: left;     
+        #aside{
+            width: 30%;
+            height: 780px;
+            background-color: #FFB74D;
         }
-        #contents1 {
-            width: 400px;
-            height: 280px;
-            background-color: #d63b3b;
-            float: left;
+        #section{
+            width: 70%;
+            height: 780px;
+            background-color: #FFA726;
         }
-        #contents2 {
-            width: 400px;
-            height: 280px;
-            background-color: #830a0a;
-            float: left;
-        }
-        #contents3 {
-            width: 400px;
-            height: 280px;
-            background-color: #651919;
-            float: left;
-        }        
-        #footer1 {
-            width: 300px;
+        #footer{
+            width: 100%;
             height: 100px;
-            background-color: #eb1111;
-            float: left;
+            background-color: #FF9800;
         }
-        #footer2 {
-            width: 600px;
-            height: 100px;
-            background-color: #7f0606;
-            float: left;
+        @media (max-width:1220px){
+            #wrap{
+                width: 96%;
+            }
         }
-        #footer3 {
-            width: 300px;
-            height: 100px;
-            background-color: #380505;
-            float: left;
+        @media (max-width:768px){
+            #wrap{
+                width: 100%;
+            }
+        }
+        @media (max-width:488px){
+            #aside{
+                width: 100%;
+                height: 300px;
+            }
+            #section{
+                width: 100%;
+                height: 48px;
+            }
         }
     </style>
 </head>
 <body>
     <div id="wrap">
-        <div id="header1"></div>
-        <div id="header2"></div>
-        <div id="bener"></div>
-        <div id="contents1"></div>
-        <div id="contents2"></div>
-        <div id="contents3"></div>
-        <div id="footer1"></div>
-        <div id="footer2"></div>
-        <div id="footer3"></div>
+        <header id="header"></header>
+        <nav id="nav"></nav>
+        <aside id="aside"></aside>
+        <section id="section"></section>
+        <footer id="footer"></footer>
+
     </div>
-    
 </body>
 </html>
