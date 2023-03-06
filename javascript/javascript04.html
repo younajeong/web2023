@@ -122,9 +122,9 @@
                         <pre><code class="language-js">{
     const num = 100;     
     if(num){
-    if(num) document.write("실행되었습니다.(ture)");
+        if(num) document.write("실행되었습니다.(ture)");
     }else{
-    document.write("실행되었습니다.(false)");
+        document.write("실행되었습니다.(false)");
     }
 
     if(num) document.write("실행되었습니다.(ture)");
@@ -151,9 +151,9 @@
     const num=100;
 
     if(num == 100){
-    document.write("ture");
+        document.write("ture");
     }else {
-    document.write("false");
+        document.write("false");
     }   //기본 형식 
 
     (num == 100) ? document.write("ture"):document.write("false");
@@ -288,6 +288,7 @@
     }
 
     let num = 0;             //초기값
+
     while(num&lt;5){          //조건문
         document.write(num);     
         num++;      //실행이 한번에 되지 않는다            
@@ -439,13 +440,12 @@
                     <div class="script">
                         <pre><code class="language-js">{
     for(let i=1; i&lt;20; i++){
-    if(i == 10){
-    break;
+        if(i == 10){
+        break;
+        }
+        document.write(i)   //10번전 까지 
     }
-    document.write(i)   //10번전 까지 
-    }
-    }
-    document.write("&lt;br&gt;");
+        document.write("&lt;br&gt;");
 }
 </code></pre>
                     </div>
@@ -464,13 +464,13 @@
                     <h3>12. continue문 </h3>
                     <p>continue에 지정된 숫자를 빼고 나머지 값을 나타냅니다.</p>
                     <div class="script">
-                        <pre><code class="language-js">{
+<pre><code class="language-js">{
     for(let i=1; i&lt;20; i++){
-    if(i == 10){
-    continue;
+        if(i == 10){
+        continue;
     }
     document.write(i)   //10을 없애고 나머지
-    }
+}
 </code></pre>
                     </div>
                     <div class="result">
@@ -500,7 +500,6 @@
     <script>hljs.highlightAll();</script>
 
     <script>
-
     </script>
 </body>
 
