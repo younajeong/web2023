@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드 유형 01</title>
+
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+    <style>
+        /* reset */
+         * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+        }
+        img {
+            vertical-align: top;
+            width: 100%;
+        }
+        /* common */
+        .container {
+            width: 1160px;
+            margin: 0 auto;
+            padding: 0 20px;
+            /* background-color: rgba(0, 0, 0, 0.1);  */
+        }
+        .nexon {
+            font-family: 'NexonLv1Gothic';
+            font-weight: 400;
+        }
+        .section {
+            padding: 120px 0;
+        }
+        .section.center {
+            text-align: center;
+        }
+        .section__h2 {
+            font-size: 50px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            line-height: 1;
+        }
+        .section__desc {
+            font-size: 22px;
+            color: #666;
+            margin-bottom: 70px;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        /* image__type */
+
+        .image__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image__inner .image {
+            width: 570px;
+            height: 370px;
+            background-color: #ccc;
+            position: relative;
+        }
+        .image__body {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: #fff;
+            text-align: left;
+            padding: 30px;
+        }
+        .image__body .title {
+            margin-bottom: 15px;
+            font-size: 32px;
+            line-height: 1;
+        }
+        .image__body .desc {
+            margin-bottom: 15px;
+            line-height: 1.5;
+            padding-right: 20%;
+        }
+        .image__body .btn {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 30px;
+            display: inline-block;
+        }
+        /* card__type */
+        .card__wrap {}
+
+        .card__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        .card__inner .card {
+            width: 32.3333%;
+            background-color: #f8f8f8;
+
+        }
+        .card__header {}
+        .card__body {
+            padding: 24px;
+        }
+        .card__body .title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .card__body .desc {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .card__body .btn {
+            padding-right: 40px;
+            background-image: url("data:image/svg+xml,%3Csvg width='32' height='8' viewBox='0 0 32 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM31.3536 4.35355C31.5488 4.15829 31.5488 3.84171 31.3536 3.64645L28.1716 0.464466C27.9763 0.269204 27.6597 0.269204 27.4645 0.464466C27.2692 0.659728 27.2692 0.976311 27.4645 1.17157L30.2929 4L27.4645 6.82843C27.2692 7.02369 27.2692 7.34027 27.4645 7.53553C27.6597 7.7308 27.9763 7.7308 28.1716 7.53553L31.3536 4.35355ZM1 4.5H31V3.5H1V4.5Z' fill='black'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="card__wrap section nexon">
+        <div class="container">
+            <h2 class="section__h2">2023년 DJ Festival</h2>
+            <p class="section__desc">2023년 다시 돌아온 DJ Festival에 여러분을 초대합니다. 
+                세계 최고의 DJ이들이 모여 함께 즐기는 Festival 다양한 장르를 넘나드는 DJ의 세계로 빠져보세요! </p>
+            <div class="card__inner">
+                <article class="card">
+                    <figure class="card__header">
+                        <img src="../asset/img/cardType01.jpg" alt="페스티벌 장소 및 일시">
+                    </figure>
+                    <div class="card__body">
+                        <h3 class="title">페스티벌 장소 및 일시</h3>
+                        <p class="desc">공연 일정은 2023년 8월에 시작합니다.장소는 잠실 종합운동장에서 개최합니다. 일정과 장소를 한번더 체크해 주시고 2023년 개최된 DJ 페스티벌에 많은 관심과 사랑 부탁드립니다.</p>
+                        <a href="#" class="btn">자세히보기</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card__header">
+                        <img src="../asset/img/cardType02.jpg" alt="페스티벌 장소 및 일시">
+                    </figure>
+                    <div class="card__body">
+                        <h3 class="title">예매시 주의사항</h3>
+                        <p class="desc">본 공연은 비지정석 공연이며 한정 수량으로 판매 되고 있습니다.본 공연은 19세 이상 관람으로 제한되 있으니 19세 미만은 관람이 제한 되는 점 유의 부탁드리겠습니다.
+                        </p>
+                        <a href="#" class="btn">자세히보기</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card__header">
+                        <img src="../asset/img/cardType03.jpg" alt="페스티벌 장소 및 일시">
+                    </figure>
+                    <div class="card__body">
+                        <h3 class="title">페스티벌 장소 및 일시</h3>
+                        <p class="desc">공연 일정은 2023년 8월에 시작합니다.장소는 잠실 종합운동장에서 개최합니다. 일정과 장소를 한번더 체크해 주시고 2023년 개최된 DJ 페스티벌에 많은 관심과 사랑 부탁드립니다.</p>
+                        <a href="#" class="btn">자세히보기</a>
+                          
+                    </div>
+                </article>
+            </div>  
+    </section>
+</body>
+</html>
