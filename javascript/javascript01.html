@@ -736,26 +736,30 @@
 
                 <div id="sample20" class="sample">
                     <h3>20.식별자, 예약자</h3>
-                    <p>식별자와 예약자.</p>
+                    <p>식별자와 예약자에 대한 설명입니다.</p>
                     <div class="script">
 <pre><code class="language-js">{
-    }
+    //식별자 변수는 띄어쓰기를 할 수 없습니다.
+    var n um = 10; // 띄어쓰기 불가능
+
+    //특수문자가 올 수 없으나 '_'나 '$'는 사용할 수 있습니다.
+    var 1ume = 10;  //x
+    var %ume = 10;  //x
+    var _ume = 10;  //o  
+    var $ume = 10;  //o
+
+    //예약어 : 자바스크립트 안에서 특별한 용도를 가진 키워드를 의미합니다. 변수명으로 사용 불가능
+
+    //brea,case,catch,default,delete,do,else,finally,for,function,if,in,instanceof,new,return,switch,this,throw,try,typeof,var...
+    var break = 10;
+    var continue = 10;
 }
 </code></pre>
                     </div>
                     <div class="result">
                         <details>
                             <summary>결과 확인하기</summary>
-                            <div>
-                                x= 100<br>
-                                typeof(x)= Number<br>
-                                y= "200"
-                                typeof(x)= string<br>
-                                y=Number(y)= : string 에서 number로 변환<br>
-                                (z)=undefined <br>
-                                typeof(z)=undefined <br>
-                                func=function <br>
-                                typeof(func)=function<br>         
+                            <div>        
                             </div>
                         </details>
                     </div>
