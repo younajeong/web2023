@@ -342,12 +342,12 @@
 
     const arr = [1,2,3,4,5,6,7,8,9,];
 
-    for(let i=0; i&lt;arr.length; i++){
+    for(let i=0; i&lt;=arr.length; i++){
         document.write(arr[i]);
     }
     for(let i=1; i&lt;=arr.length; i++){
             if(i % 2 == 0){
-            document.write("&lt;span style='color:red'&gt;>"+i+"&lt;span&gt;");
+            document.write("&lt;span style='color:red'&gt;"+i+"&lt;span&gt;");
         } else {
             document.write(`&lt;span style='color:blue'&gt;"+i+"&lt;/span&gt;`);
             } 
@@ -439,7 +439,7 @@
                     <p>break문에 지정된 숫자 앞에서 끊어 주니다.</p>
                     <div class="script">
                         <pre><code class="language-js">{
-    for(let i=1; i&lt;20; i++){
+    for(let i=1; i&lt;=20; i++){
         if(i == 10){
         break;
         }
@@ -465,7 +465,7 @@
                     <p>continue에 지정된 숫자를 빼고 나머지 값을 나타냅니다.</p>
                     <div class="script">
 <pre><code class="language-js">{
-    for(let i=1; i&lt;20; i++){
+    for(let i=1; i&lt;=20; i++){
         if(i == 10){
         continue;
     }

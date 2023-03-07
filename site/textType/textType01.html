@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 유형01</title>
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-weight: normal;
+        }
+        img {
+            vertical-align: top;
+            width: 100%;
+        }
+        .mt10 {margin-top: 10px !important;}
+        .mt20 {margin-top: 20px !important;}
+        .mt30 {margin-top: 30px !important;}
+        .mt40 {margin-top: 40px !important;}
+        .mt50 {margin-top: 50px !important;}
+        .mt60 {margin-top: 60px !important;}
+        .mt70 {margin-top: 70px !important;}
+
+        .mb10 {margin-bottom: 10px !important;}
+        .mb20 {margin-bottom: 20px !important;}
+        .mb30 {margin-bottom: 30px !important;}
+        .mb40 {margin-bottom: 40px !important;}
+        .mb50 {margin-bottom: 50px !important;}
+        .mb60 {margin-bottom: 60px !important;}
+        .mb70 {margin-bottom: 70px !important;}
+        
+        .container {
+            width: 1160px;
+            margin: 0 auto;
+            padding: 0 20px;
+            /* background-color: rgba(0, 0, 0, 0.1); */
+        }
+        .nexon {
+            font-family: 'NexonLv1Gothic';
+            font-weight: 400;
+        }
+        .section {
+            padding: 120px 0;
+        }
+        .section.center {
+            text-align: center;
+        }
+        .section__small {
+            font-size: 14px;
+            border-radius: 50px;
+            background-color: #f6baa7;
+            color: #fff;
+            padding: 1px 23px; 
+            text-transform: uppercase; 
+            margin-bottom: 20px; 
+            display: inline-block;        
+        }
+        .section__h2 {
+            font-size: 50px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            line-height: 1;
+        }
+        .section__desc {
+            font-size: 22px;
+            color: #666;
+            margin-bottom: 70px;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+        .text__wrap {
+            
+        }
+        .text__inner {
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+        .text__inner .text {
+            width: 32.33333%;
+            border: 1px solid #f5f5f5;
+            border-radius: 10px;
+            padding: 90px 20px 20px 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+        .text__inner .text:hover {
+            background-color: #f5f5f5;
+        }
+        .text__inner .text::before {
+            content: '';
+            width: 60px;
+            height: 60px;
+            background-color: #ff9292;
+            background-image: url(../asset/img/textType01_01.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            border-radius: 50%;
+        }
+        .text__inner .text.t1::before {
+            background-color: #B98CDD;
+            background-image: url(../asset/img/textType01_01.svg);
+        }
+        .text__inner .text.t2::before {
+            background-color: #4F5ABF;
+            background-image: url(../asset/img/textType01_02.svg);
+        }
+        .text__inner .text.t3::before {
+            background-color: #D596;
+            background-image: url(../asset/img/textType01_03.svg);
+        }
+        .text__inner .text.t4::before {
+            background-color: #745BDA;
+            background-image: url(../asset/img/textType01_04.svg);
+        }
+        .text__inner .text.t5::before {
+            background-color: #71116D;
+            background-image: url(../asset/img/textType01_05.svg);
+        }
+        .text__inner .text.t6::before {
+            background-color: #3E2649;
+            background-image: url(../asset/img/textType01_06.svg);
+        }
+        .text__title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .text__desc {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .text__btn {
+            float: right;
+            position: relative;
+            padding-right: 20px;
+        }
+        .text__btn::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background-image: url(../asset/img/icon_plus.svg);
+            transition: all 0.3s;
+        }
+        .text__btn:hover::before {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <section class="text__wrap section center nexon">
+        <div class="container">
+            <span class="section__small">notice</span>
+            <h2 class="section__h2 mb70">2023 DJ Festival</h2>
+            <div class="text__inner">
+                <div class="text t1">
+                    <h3 class="title">음원 리스트</h3>
+                    <p class="desc">이번 페스티벌을 통해 발표한 음원 리스트입니다.
+                        EDM, 하우스, 트렌스 등의 장르로 구성되어 있으며 
+                        이번 페스티벌에서 생생하게 녹음한 라이브 또한
+                        즐길 수 있는 음원 리스트로 구성되어 있습니다.</p>
+                        <a class="text__btn" href="#">더보기</a>
+                </div>
+                <div class="text t2">
+                    <h3 class="title">라이브 현장</h3>
+                    <p class="desc">2023년 DJ페스티벌을 라이브로 진행합니다. 현장을 라이브로 관람
+                        하고 싶으신 분들은 인증을 하시고 2023년 뜨거운 현장감을 함께
+                        즐기며 느끼시길 원합니다. 따로 녹화본은 준비되어 있지 않으니 
+                        유의하시고 즐거운 관림 되시길 바라겠습니다.</p>
+                        <a class="text__btn" href="#">더보기</a>
+                </div>
+                <div class="text t3">
+                    <h3 class="title">아티스트 인터뷰</h3>
+                    <p class="desc">2023년 DJ페스티벌을 라이브로 진행합니다. 현장을 라이브로 관람
+                        하고 싶으신 분들은 인증을 하시고 2023년 뜨거운 현장감을 함께
+                        즐기며 느끼시길 원합니다. 따로 녹화본은 준비되어 있지 않으니 
+                        유의하시고 즐거운 관림 되시길 바라겠습니다.</p>
+                        <a class="text__btn" href="#">더보기</a>
+                </div>
+                <div class="text t4">
+                    <h3 class="title">주의 사항</h3>
+                    <p class="desc">이번 페스티벌을 주의사항은 다음과 같습니다. 먼저 많은 인파가
+                        모여있으니 입장과 퇴장시 서로 서로 줄 간격을 지켜 주세요
+                        또한 음식물 반입이 금지되어 있습니다. 물은 반입이 가능하오니
+                        자신이 가져온 물병등 쓰레기는 치워주시기 부탁드리겠습니다.</p>
+                        <a class="text__btn" href="#">더보기</a>
+                </div>
+                <div class="text t5">
+                    <h3 class="title">티켓예매 안내</h3>
+                    <p class="desc">이번 페스티벌을 티켓안내는 인터파크 등 티켓 판매 홈페이지에
+                        오픈 될 예정입니다. 티켓에 관하여 불법예매가 진행으로 위법시
+                        처벌이 있을 수 있으니 티켓예매에 관한 주의사항을 유의해 주시고 올바른 티켓예매 부탁 드리겠습니다.</p>
+                        <a class="text__btn" href="#">더보기</a>
+                </div>
+                <div class="text t6">
+                    <h3 class="title">2023 이벤트</h3>
+                    <p class="desc">이번 2023년 페스티벌 이벤트는 추첨을 통해 아티스트가 발매한
+                        CD와 더불어 친필싸인이 배송될 예정입니다. 성함과 주소와 
+                        연락처를 간단하게 기재해주시고 이벤트에 참여해보세요! 
+                        원하던 아티스트의 앨범을 가져가실 수 있는 기회입니다!</p>
+                        <a class="text__btn" href="#">더보기</a>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+</body>
+</html>
