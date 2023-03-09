@@ -15,6 +15,6 @@
 이미지유형 01 : https://younajeong.github.io/web2023/site/imageType/imageType01.html   
 카드 유형 01 : https://younajeong.github.io/web2023/site/cardType/cardType01.html   
 텍스트 유형 01 : https://younajeong.github.io/web2023/site/textType/textType01.html   
-슬라이드 유형01 : https://younajeong.github.io/web2023/site/silderType/sliderType01.html      
+슬라이드 유형01 : https://younajeong.github.io/web2023/site/slilderType/slilderType01.html      
 슬라이드 유형01 : https://younajeong.github.io/web2023site/slilderType/slilderType01.html
 
