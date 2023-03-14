@@ -9,7 +9,7 @@
 데이터 제어하기 : https://younajeong.github.io/web2023/javascript/javascript04.html
 
 퀴즈게임01 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext01.html  
-퀴즈게임02 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext02.html
+퀴즈게임02 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext02.html   
 퀴즈게임03 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext03.html     
 퀴즈게임04 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext04.html   
 
@@ -18,5 +18,6 @@
 카드 유형 01 : https://younajeong.github.io/web2023/site/cardType/cardType01.html   
 텍스트 유형 01 : https://younajeong.github.io/web2023/site/textType/textType01.html   
 슬라이드 유형01 : https://younajeong.github.io/web2023/site/slilderType/slilderType01.html      
-슬라이드 유형01 : https://younajeong.github.io/web2023site/slilderType/slilderType01.html
+헤더 유형01 : https://younajeong.github.io/web2023site/headerType/headerType01.html   
+이미지텍스트 유형01 : https://younajeong.github.io/web2023site/img_textType01/img_textType01.html
 
