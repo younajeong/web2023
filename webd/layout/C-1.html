@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 (C-1)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            
+        }
+        #header {
+            width: 20%;
+            height: 650px;
+            background-color: #ffe0e0;
+        }
+        #section {
+            width: 80%;
+        }
+        #header .logo {
+            height: 50px;
+            background-color: #ffc7c7;
+        }
+        #slider {
+            height: 350px;
+            background-color: #fcb9b9;
+        }
+        #contents {
+            display: flex;
+        }
+        #contents .cont1 {
+            width: 33.333%;
+            height: 200px;
+            background-color: #a16d6d;
+        }
+        #contents .cont2 {
+            width: 33.333%;
+            height: 200px;
+            background-color: #9e6666;
+        }
+        #contents .cont3 {
+            width: 33.333%;
+            height: 200px;
+            background-color: #924747;
+        } 
+        #footer {
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .foot1 {
+            height: 100px;
+            width: 20%;
+            background-color: #fce5e5;
+        }
+        .foot2 {
+            height: 50px;
+            width: 80%;
+            background-color: #fab3b3;
+        }
+        .foot3 {
+            height: 50px;
+            width: 80%;
+            background-color: #f28d8d;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="logo">로고</div>
+        </header>
+        <section id="section">
+            <article id="slider">슬라이드</article>
+            <section id="contents">
+                <article class="cont1">공지사항</article>
+                <article class="cont2">배너</article>
+                <article class="cont3">바로가기</article>
+            </section>
+            <footer id="footer">
+                <div class="foot1">로고</div>
+                <div class="foot2">하단메뉴</div>
+                <div class="foot3">카피라이터</div>
+            </footer>
+        </section>
+    </div>
+
+</body>
+</html>

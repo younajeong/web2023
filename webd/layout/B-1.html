@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>레이아웃 타입(B-1)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            width: 100%;
+            height: 100px;
+            background-color: #e7e2e2;
+            
+        }
+        #header .container {
+            display: flex;
+        }
+        #header .container .logo {
+            width: 20%;
+            height: 100px;
+            background-color: #faafaf;
+        }
+        #header .container .nav {
+            width: 80%;
+            height: 100px;
+            background-color: #cf9494;
+        }
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #slider .container {
+            height: 300px;
+            background-color: #ffc9c9;
+        }
+        #contents .container{
+
+            display: flex;
+        }
+        #contents .container .cont1 {
+            width: 33.333%;
+            height: 200px;
+            background-color: #ffd1d1;
+        }
+        #contents .container .cont2 {
+            width: 33.333%;
+            height: 200px;
+            background-color: #fb9a9a;
+        }
+        #contents .container .cont3 {
+            width: 33.333%;
+            height: 200px;
+            background-color: #dda3a3;
+        }
+        #footer {
+            background-color: #ccc;
+        }
+        #footer .container {
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        #footer .container .foot1 {
+            width: 20%;
+            height: 100px;
+            background-color: #c38c8c;
+        }
+        #footer .container .foot2 {
+            width: 80%;
+            height: 50px;
+            background-color: #8f6464;
+        }
+        #footer .container .foot3 {
+            width: 80%;
+            height: 50px;
+            background-color: #987575;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="logo">로고</div>
+                <nav class="nav">메뉴</nav>
+            </div>
+        </header>
+        <!-- //header -->
+        <article id="slider">
+            <div class="container">
+                이미지 슬라이드
+            </div>
+        </article>
+        <!-- //slider -->
+        <section id="contents">
+            <div class="container">
+                <article class="cont1">공지사항</article>
+                <article class="cont2">배너</article>
+                <article class="cont3">바로가기</article>
+            </div>
+        </section>
+        <!-- //contents -->
+        <footer id="footer">
+            <div class="container">
+                <div class="foot1">로고</div>
+                <div class="foot2">하단메뉴</div>
+                <div class="foot3">카피라이터</div>
+            </div>
+        </footer>
+         <!-- //footer -->
+    </div>
+</body>
+</html>

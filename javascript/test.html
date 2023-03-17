@@ -8,146 +8,69 @@
 </head>
 <body>
     <script>
-      //1-50까지 for문
+        // //1-10까지 
+        // {
+        //     for (let i=1; i<=10; i++){
+        //         document.write(i);
+        //     }
+        // }
+        // document.write("<br>")
+        // //
+        // {
+        //     for (let i=1; i<=10; i++){
+        //         if(i % 2 == 0){
+        //             document.write(i);
+        //     }
+        //         }
+                
+        // }
+        // document.write("<br>")
+        // //홀수 빨간 짝수 파랑
+        // {
+        //     for (let i=1; i<=10; i++){
+        //         if(i % 2 == 0){
+        //             document.write("<span style='color:blue'>"+i+"</span>");
+        //         }else {
+        //             document.write("<span style='color:red'>"+i+"</span>");
+        //         }
+        //     } 
+        // }
+        // document.write("<br>")
+        // // 배열 
+        // const num = [100,200,300,400,500,600,700,800,900]
 
-    for(let i=1; i<=50; i++){
-        document.write(i);
-    }
+        // for (let i=0; i<num.length; i++){
+        //     document.write(num[i]);
+        // }
+        // document.write("<br>")
 
-    document.write ("<br>")
+        // num.forEach(function(el){
+        //     document.write(el);
+        // });
+        // document.write("<br>")
 
-    //1-50까지 while문
+        // for (let i in num){
+        //     document.write(num[i]);
+        // }
+        // document.write("<br>")
 
-    let num = 1;
+        // for (let i of num){
+        //     document.write(i);
+        // }
+        
+        const num = [100,200,300,400,500];
 
-    while(num <= 50){
-    document.write(num);
-        num++ ;
-    } 
-    
-
-    document.write ("<br>")
-    //1-100까지 짝수
-
-    for(let i=2; i<=100; i+=2){
-    document.write(i);
-    }
-    document.write ("<br>")
-
-      //홀수 출력
-
-    for(let i=1; i<=100; i++){
-    if(i % 2 == 1){
-        document.write(i);
-    }
-    }
-    document.write ("<br>")
-
-    //1부터 50 테이블
-
-    let table = "<table border ='1'>";
-    let num1 = 1;
-
-        for(let i=1; i<=10; i++){
-            table += "<tr>"
-                for(let j=1; j<=5; j++){
-                    table += "<td>"+num1+"</td>";
-                    num1++;
-                }
-            table += "</tr>"
+        for(let index of num){
+            document.write(index);
         }
-        table += "</table>"
-        document.write(table);
-
-        document.write ("<br>")  
-
-        //합 출력
-        let num2 = 0;
-
-        for(let i=1; i<=10; i++){
-            num2 += i;     
+        
+        for(let index of num){
+            document.write(index);
         }
-        document.write(num2);
-
-        document.write ("<br>")
-
-        //구구단 출력
-        for (let i=2; i<=9; i++){
-            document.write(i + "<단>","<br>");
-            for(let j=1; j<=9; j++){
-                document.write(i + "X" + j + "=" + j*i, "<br>");
-            }
+        for(let index of num){
+            document.write(index[num]);
         }
-
-        //함수
-
-        //선언적 함수
-        {
-            function func (){
-                document.write("선언1")
-            }
-            func();
-        }
-
-        //익명 함수
-        {
-            const func = function (){
-                document.write("선언2")
-            }
-            func();
-        }    
-
-        //매개변수 함수
-        {
-            function func (str){
-                document.write(str)
-            }
-            func("선언3");
-        }
-
-        //리턴값 함수
-        {
-            function func (){
-                const str = "선언4"
-                return str;
-            }
-            document.write(func());
-        }
-
-         //선언적 함수
-        {
-            func=()=>{
-                document.write("선언1")
-            }
-            func();
-        }
-
-        //익명 함수
-        {
-            const func = ()=> {
-                document.write("선언2")
-            }
-            func();
-        }
-
-        //매개변수 함수
-        {
-            func = (str) => {
-                document.write(str)
-            }
-            func("선언3");
-        } 
-
-        //리턴값 함수
-        {
-            func = ()=> {
-                const str = "선언4"
-                return str;
-            }
-            document.write(func());
-        }
-
-    
+        
     </script>
 </body>
 </html>
