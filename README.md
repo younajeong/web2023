@@ -11,7 +11,9 @@
 퀴즈게임01 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext01.html  
 퀴즈게임02 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext02.html   
 퀴즈게임03 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext03.html     
-퀴즈게임04 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext04.html   
+퀴즈게임04 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext04.html 
+
+마우스이펙트01 : https://younajeong.github.io/web2023javascript/mouse/mouseEffect01.html   
 
 #사이트   
 이미지유형 01 : https://younajeong.github.io/web2023/site/imageType/imageType01.html   
