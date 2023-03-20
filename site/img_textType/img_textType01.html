@@ -8,6 +8,7 @@
 
     <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
     <style>   
+        /* reset */
     * {
         margin: 0;
         padding: 0;
@@ -16,20 +17,23 @@
         text-decoration: none;
         color: #000;
     }
-    h1,h2,h3,h4,h5,h6 {
+    h1, h2, h3, h4, h5, h6 {
         font-weight: normal;
     }
     img {
         vertical-align: top;
         width: 100%;
     }
+    li {
+            list-style: none;
+        }
     .blind {
         position: absolute;
         clip: rect(0 0 0 0);
-        width:1px;
-        height:1px;
-        margin:-1px;
-        overflow:hidden
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
     }
     .mt10 {margin-top: 10px !important;}
     .mt20 {margin-top: 20px !important;}
@@ -38,7 +42,6 @@
     .mt50 {margin-top: 50px !important;}
     .mt60 {margin-top: 60px !important;}
     .mt70 {margin-top: 70px !important;}
-
     .mb10 {margin-bottom: 10px !important;}
     .mb20 {margin-bottom: 20px !important;}
     .mb30 {margin-bottom: 30px !important;}
@@ -46,12 +49,12 @@
     .mb50 {margin-bottom: 50px !important;}
     .mb60 {margin-bottom: 60px !important;}
     .mb70 {margin-bottom: 70px !important;}
-        
+        /* common */
     .container {
         width: 1160px;
         margin: 0 auto;
         padding: 0 20px;
-        /* background-color: rgba(0, 0, 0, 0.1); */
+            /* background-color: rgba(0,0,0,0.1); */
     }
     .nexon {
         font-family: 'NexonLv1Gothic';
@@ -74,80 +77,126 @@
     display: inline-block;        
     }
     .section__h2 {
-    font-size: 50px;
-    font-weight: 400;
-    margin-bottom: 30px;
-    line-height: 1;
+        font-size: 50px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        line-height: 1;
     }
     .section__desc {
-    font-size: 22px;
-    color: #666;
-    margin-bottom: 70px;
-    font-weight: 300;
-    line-height: 1.5;
+        font-size: 22px;
+        color: #666;
+        margin-bottom: 70px;
+        font-weight: 300;
+        line-height: 1.5;
     }
 
     /* imgtext__wrap */
-    .imgtext__wrap {
-        height: 900px;
-        margin-top: 120px;
-    }
+    
     .imgtext__inner {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
-    .img_text__text {
-        width: 373px;
+        .imgtext__inner article {
+            width: 31.333%;
+        }
+        .imgtext__inner .text span {
+            background-color: #FF7C7C;
+            font-size: 14px;
+            color: #fff;
+            padding: 1px 20px;
+            border-radius: 50px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        .imgtext__inner .text h3 {
+            font-size: 50px;
+            margin-bottom: 17px;
+        }
+        .imgtext__inner .text p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+            margin-bottom: 12px;
     }
-    .img_text__text h2 {
-        font-size: 50px;
-        line-height: 1.2;
-        margin-bottom: 25px;
-    }
-    .img_text__text p {
-        font-size: 16px;
-        margin-bottom: 15px;
-        line-height: 1.5;
-        color: #666;
-    }
-    .img_text__text ul{
-        font-size: 16px;
-        margin-left: 15px;
-        line-height: 1.7;
-        color: #666;
-    }
-    
+        .imgtext__inner .text li {
+            position: relative;
+            padding-left: 14px;
+        }
+        .imgtext__inner .text li::before {
+            content: "";
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #666;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+        .imgtext__inner .text li a {
+            color: #666;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .imgtext__inner .img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .imgtext__inner .img a {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 40px;
+        }
+        .imgtext__inner .img.i1 {
+            background-image: url(../asset/img/IMGTEXT-Type01_01.jpg);
+        }
+        .imgtext__inner .img.i2 {
+            background-image: url(../asset/img/IMGTEXT-Type01_02.jpg);
+        }
+        .imgtext__inner .img.i1 a {
+            background-color: #6b6b6a;
+        }
+        .imtext__inner .img.i2 a {
+            background-color: #6b6b6a;
+        }
     </style>
 </head>
 <body>
-    <div class="imgtext__wrap nexon">
+    <div class="imgtext__wrap section nexon">
+        <h2 class="blind">이미지/텍스트 영역</h2>
         <div class="container">
             <div class="imgtext__inner">
-                <h2 class="blind">이미지/텍스트 영역</h2>
-                <div class="img_text__text">
-                    <span class="section__small">NOTICE</span>
-                    <h2>세계 각국 음악 페스티벌</h2>
+                <article class="text">
+                    <span>NOTICE</span>
+                    <h3>세계 각국 음악 페스티벌</h3>
                     <p>세계각국에서 열리고 있는 음악 페스티벌 입니다.
                         각국에서 열리는 페스티벌은 다음과 같습니다.</p>
                     <ul>
-                        <li>코첼라 (Coachella) - 미국 캘리포니아</li>
-                        <li>글래스톤베리 (Glastonbury) - 영국</li>
-                        <li>우드스톡 (Woodstock) - 미국 뉴욕</li>
-                        <li>로스키르 (Roskilde) - 덴마크</li>
-                        <li>프림버라 (Primavera Sound) - 스페인</li> 
-                        <li>라롤팔루자 (Lollapalooza) - 미국 시카고</li>
-                        <li>소나르 (Sonar) - 스페인 바르셀로나</li>
-                        <li>롤라팔루자 (Lollapalooza) - 미국에서 시작되어 현재는 다양한 국가에서 열리고 있다.</li>
+                        <li><a href="#">코첼라 (Coachella) - 미국 캘리포니아</a></li>
+                        <li><a href="#">글래스톤베리 (Glastonbury) - 영국</a></li>
+                        <li><a href="#">우드스톡 (Woodstock) - 미국 뉴욕</a></li>
+                        <li><a href="#">로스키르 (Roskilde) - 덴마크</a></li>
+                        <li><a href="#">프림버라 (Primavera Sound) - 스페인</a></li> 
+                        <li><a href="#">라롤팔루자 (Lollapalooza) - 미국 시카고</a></li>
+                        <li><a href="#">소나르 (Sonar) - 스페인 바르셀로나</a></li>
+                        <li><a href="#">롤라팔루자 (Lollapalooza) - 미국에서 시작되어 현재는 다양한 국가에서 열리고 있다.</a></li>
                     </ul>
-                </div>
-                <figure class="imge__header">
-                    <img src="../asset/img/IMGTEXT-Type01_01.jpg">
-                </figure>
-                <figure class="imge__header">
-                    <img src="../asset/img/IMGTEXT-Type01_02.jpg">
-                </figure>     
+                </article>
+                <article class="img i1">
+                    <a href="#">페스티벌 종류 </a>
+                </article>
+                <article class="img i2">
+                    <a href="#">세계 페스티벌</a>
+                </article>
             </div>
         </div>
-    </div>
+    </section>
 </body>
 </html>

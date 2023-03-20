@@ -1,0 +1,68 @@
+/* reset */
+@import url('https://webfontworld.github.io/hallym/Hallym.css');
+@import url('https://webfontworld.github.io/suncheon/Suncheon.css');
+@import url('https://webfontworld.github.io/Poppins/Poppins.css');
+@import url('https://webfontworld.github.io/kt/YUniverse.css');
+@import url('https://webfontworld.github.io/TheJamsil/TheJamsil.css');
+@import url('https://webfontworld.github.io/NanumBarunGothic/NanumBarunGothic.css');
+@import url('https://webfontworld.github.io/busan/Busan.css');
+@import url('https://webfontworld.github.io/GothicA1/GothicA1.css');
+@import url('https://webfontworld.github.io/jeju/JejuGothic.css');
+@import url('https://webfontworld.github.io/amore/AritaBuri.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+li, ul, ol {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+    width: 100%;
+}
+em {
+    font-style: normal;
+}
+.font01 {
+    font-family: 'Hallym';
+}
+.font02 {
+    font-family: 'Suncheon';
+}
+.font03 {
+    font-family: 'Poppins';
+}
+.font04 {
+    font-family: 'YUniverse';
+}
+.font05 {
+    font-family: 'TheJamsil';
+}
+.font06 {
+    font-family: 'NanumBarunGot';
+}
+.font07 {
+    font-family: 'Busan';
+}
+.font08 {
+    font-family: 'GothicA1';
+}
+.font09 {
+    font-family: 'JejuGothic';
+}
+.font10 {
+    font-family: 'AritaBuri';
+}
