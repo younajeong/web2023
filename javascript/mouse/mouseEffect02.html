@@ -11,6 +11,81 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/mouse.css">
 </head>
+    <style>
+        .mouse__wrap {
+            cursor: none;
+        }
+        .mouse__text {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .mouse__text p {
+            font-size: 2.5vw;
+            line-height: 1.9;
+        }
+        .mouse__text p :last-child {
+            font-style: 4vw;
+        }
+        .mouse__text p span {
+            color: rgb(250, 142, 202);
+        }
+        .mouse__cursor {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            z-index: 9999;
+            border-radius: 50%;
+            background-color: rgba(225, 225, 225, 0.3);
+            user-select: none;
+            pointer-events: none;
+            transform: transform0.3s;
+
+        }
+        .mouse__cursor2 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            z-index: 9998;
+            border-radius: 50%;
+            background-color: rgba(225, 225, 225, 0.5);
+            user-select: none;
+            pointer-events: none;
+            transform: transform 0.3s;
+        }
+        
+        .mouse__cursor.active {
+            transform: scale(0);
+        }
+        .mouse__cursor2.active {
+            transform: scale(5);
+            background-color: rgba(225, 166, 0, 0.6);
+        }
+        .mouse__cursor.active2 {
+            transform: scale(2);
+            background-color: rgba(255, 235, 135, 0.6);
+        }
+        .mouse__cursor2.active2 {
+            transform: scale(1);
+            background-color: rgba(138, 136, 255, 0.6);
+        }
+        .mouse__cursor.active3 {
+            transform: scale(3);
+            background-color: rgba(88, 170, 126, 0.6);
+        }
+        .mouse__cursor2.active3 {
+            transform: scale(2);
+            background-color: rgba(95, 119, 250, 0.6);
+        }
+    </style>
 <body class="img02 bg02 font02">
     <header id="header">
         <h1>Javascript mouseEffect02</h1>
@@ -28,7 +103,14 @@
     <!-- //header -->
 
     <main id="main">
-
+        <div class="mouse__wrap">
+            <div class="mouse__cursor"></div>
+            <div class="mouse__cursor2"></div>
+            <div class="mouse__text">
+                <p><span>love</span> what you have.</p>
+                <p>가진것을 <span>사랑</span>하라.</p>
+            </div>
+        </div>
     </main>
     <!-- //main -->
 
@@ -36,6 +118,70 @@
         <a href="mailto:jeongyouna_@naver.com">jeongyouna_@naver.com</a>
     </footer>  
     <!-- //footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script>
+        // 선택자
+        const cursor = document.querySelector(".mouse__cursor");
+        const cursor2 = document.querySelector(".mouse__cursor2");
+    
+        //커서 좌푯값 할당
+        window.addEventListener("mousemove", e => {
+        //     cursor.style.left = e.pageX + "px";
+        //     cursor.style.top = e.pageY + "px";
+        //     cursor2.style.left = e.pageX + "px";
+        //     cursor2.style.top = e.pageY + "px";
 
+
+        // gsap
+        gsap.to(cursor, {duration: 0.3, left: e.pageX -5, top: e.pageY-5});
+        gsap.to(cursor2, {duration: 0.8, left: e.pageX -15, top: e.pageY-15});
+
+        // 오버 효과
+        // document.querySelector(".mouse__text span").addEventListener("mouseenter", () => {
+        //     cursor.classList.add("active");
+        //     cursor2.classList.add("active");
+        // });
+        // document.querySelector(".mouse__text span").addEventListener("mouseleave", () => {
+        //     cursor.classList.remove("active");
+        //     cursor2.classList.remove("active");
+        // });
+
+        //forEach문 다중이
+        
+        document.querySelectorAll(".mouse__text span").forEach(span => {
+            span.addEventListener(("mouseenter"), () => {
+                cursor.classList.add("active");
+                cursor2.classList.add("active");
+            })
+            span.addEventListener(("mouseleave"), () => {
+                cursor.classList.remove("active");
+                cursor2.classList.remove("active");
+            })
+        })
+
+    
+        document.querySelectorAll("#header li.active").forEach(span => {
+            span.addEventListener(("mouseenter"), () => {
+                cursor.classList.add("active2");
+                cursor2.classList.add("active2");
+            })
+            span.addEventListener(("mouseleave"), () => {
+                cursor.classList.remove("active2");
+                cursor2.classList.remove("active2");
+            })
+        })
+        document.querySelectorAll("#footer").forEach(span => {
+            span.addEventListener(("mouseenter"), () => {
+                cursor.classList.add("active3");
+                cursor2.classList.add("active3");
+            })
+            span.addEventListener(("mouseleave"), () => {
+                cursor.classList.remove("active3");
+                cursor2.classList.remove("active3");
+            })
+        })
+        
+    });
+    </script>
 </body>
 </html>

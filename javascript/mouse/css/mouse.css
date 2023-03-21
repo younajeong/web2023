@@ -48,10 +48,10 @@ body.bg01::after {
     background-color: rgba(17, 97, 79, 0.65);
 }
 body.bg02::after {
-    background-color: rgba(53, 19, 67, 0.87);
+    background-color: rgba(76, 102, 124, 0.87);
 }
 body.bg03::after {
-    background-color: rgba(66, 12, 71, 0.87);
+    background-color: rgba(40, 5, 5, 0.947);
 }
 body.bg04::after {
     background-color: rgba(71, 12, 34, 0.87);
@@ -61,9 +61,6 @@ body.bg05::after {
 }
 body.bg06::after {
     background-color:  rgba(12, 54, 68, 0.87);
-}
-body.bg03::after {
-    background-color: rgba(12, 68, 65, 0.87);
 }
 body.bg07::after {
     background-color: rgba(14, 54, 61, 0.87);
