@@ -23,5 +23,8 @@
 텍스트 유형 01 : https://younajeong.github.io/web2023/site/textType/textType01.html   
 슬라이드 유형01 : https://younajeong.github.io/web2023/site/slilderType/slilderType01.html      
 헤더 유형01 : https://younajeong.github.io/web2023site/headerType/headerType01.html   
-이미지텍스트 유형01 : https://younajeong.github.io/web2023site/img_textType01/img_textType01.html
+이미지텍스트 유형01 : https://younajeong.github.io/web2023site/img_textType01/img_textType01.html   
+배너 유형01 : https://younajeong.github.io/web2023site/img_bannerType01/img_bannerType01.html   
+푸터 유형01 : https://younajeong.github.io/web2023site/img_footerType01/img_footerType01.html
+
 
