@@ -13,7 +13,7 @@
 퀴즈게임03 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext03.html     
 퀴즈게임04 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext04.html 
 
-마우스이펙트01 : https://younajeong.github.io/web2023/javascript/mouse/mouseEffect01.html
+마우스이펙트01 : https://younajeong.github.io/web2023/javascript/mouse/mouseEffect01.html   
 마우스이펙트02 : https://younajeong.github.io/web2023/javascript/mouse/mouseEffect02.html     
 마우스이펙트03 : https://younajeong.github.io/web2023/javascript/mouse/mouseEffect03.html
 
