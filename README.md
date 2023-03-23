@@ -15,7 +15,10 @@
 
 마우스이펙트01 : https://younajeong.github.io/web2023/javascript/mouse/mouseEffect01.html   
 마우스이펙트02 : https://younajeong.github.io/web2023/javascript/mouse/mouseEffect02.html     
-마우스이펙트03 : https://younajeong.github.io/web2023/javascript/mouse/mouseEffect03.html
+마우스이펙트03 : https://younajeong.github.io/web2023/javascript/mouse/mouseEffect03.html 
+
+검색 이펙트01 : https://younajeong.github.io/web2023/javascript/search/searchEffect.html   
+
 
 #사이트   
 이미지유형 01 : https://younajeong.github.io/web2023/site/imageType/imageType01.html   
