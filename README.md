@@ -31,4 +31,4 @@
 푸터 유형01 : https://younajeong.github.io/web2023site/img_footerType01/img_footerType01.html
 
 #애니메이션
-애니메이션(우주) : https://younajeong.github.io/web2023/animation/webgl/webgl01.htmln
+애니메이션(우주) : https://younajeong.github.io/web2023/animation/webgl/webgl01.html
