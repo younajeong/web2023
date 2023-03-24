@@ -8,10 +8,10 @@
 데이터 실행하기 : https://younajeong.github.io/web2023/javascript/javascript03.html   
 데이터 제어하기 : https://younajeong.github.io/web2023/javascript/javascript04.html
 
-퀴즈게임01 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext01.html  
-퀴즈게임02 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext02.html   
-퀴즈게임03 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext03.html     
-퀴즈게임04 : https://younajeong.github.io/web2023/javascript/quiz/quizEffext04.html 
+퀴즈게임01 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect01.html  
+퀴즈게임02 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect02.html   
+퀴즈게임03 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect03.html     
+퀴즈게임04 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect04.html 
 
 마우스이펙트01 : https://younajeong.github.io/web2023/javascript/mouse/mouseEffect01.html   
 마우스이펙트02 : https://younajeong.github.io/web2023/javascript/mouse/mouseEffect02.html     
