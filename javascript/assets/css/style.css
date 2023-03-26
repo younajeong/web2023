@@ -34,26 +34,26 @@ body {
 #header h1 a {
     font-size: 80px;
     font-weight: 800;
-    color: #0243F1;
+    color: #47cb00;
 }
 #header nav ul li {
     display: inline;
 }
 #header nav ul li a {
-    border: 1px dashed #0243F1;
-    color: #0243F1;
+    border: 1px dashed #47cb00;
+    color: #000000;
     padding: 10px 20px;
     margin: 6px 3px;
     display: inline-block;
     transition: background-color 0.3s, color 0.3s;
 }
 #header nav ul li a:hover {
-    background-color: #0243F1;
-    color: #fff;
+    background-color: #47cb00;
+    color: #ffffff;
 }
 #header nav ul li.active a {
-    background-color: #0243F1;
-    color: #fff;
+    background-color: #47cb00;
+    color: #ffffff;
 }
 
 @media (max-width: 600px){
