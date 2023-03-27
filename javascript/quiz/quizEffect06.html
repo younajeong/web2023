@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈 이펙트06</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/quiz.css">
+
+</head>
+<body>
+    <header id="header">
+        <h1><a href="../javascript14.html">Quiz</a> <em>객관식 확인하기(여러문제) 유형 : 슬라이드 유형</em></h1>
+        <ul>
+            <li><a href="quizEffect01.html">1</a></li>
+            <li><a href="quizEffect02.html">2</a></li>
+            <li><a href="quizEffect03.html">3</a></li>
+            <li><a href="quizEffect04.html">4</a></li>
+            <li><a href="quizEffect05.html">5</a></li>
+            <li class="active"><a href="quizEffect06.html">6</a></li>
+        </ul>
+    </header>
+    <!--//header-->
+
+    <main id="main">
+        <div class="quiz__wrap">
+            <div class="quiz">
+                <div class="quiz__header">
+                    <h2 class="quiz__title"></h2>
+                </div>
+                <div class="quiz__main">
+                    <div class="quiz__question"></div>
+                    <div class="quiz__view">
+                        <div class='dog__wrap'>
+                            <div class="seacrh__info">
+                                <span></span>
+                            </div>
+                            <div class="ture">정답입니다!</div>
+                            <div class="false">틀렸습니다!</div>
+                            <div class='card-container'>
+                                    <div class='dog'>
+                                        <div class='head'>
+                                            <div class='ears'></div>
+                                            <div class='face'></div>
+                                        <div class='eyes'>
+                                            <div class='teardrop'></div>
+                                        </div>
+                                        <div class='nose'></div>
+                                        <div class='mouth'>
+                                            <div class='tongue'></div>
+                                        </div>
+                                        <div class='chin'></div>
+                                    </div>
+                                    <div class='body'>
+                                        <div class='tail'></div>
+                                        <div class='legs'></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                        <div class="quiz__choice">
+                        <!-- <label for="choice1">
+                            <input type="radio" id="choice1" name="choice" value="1">
+                            <span></span>
+                        </label>
+                        <label for="choice2">
+                            <input type="radio" id="choice2" name="choice" value="2">
+                            <span></span>
+                        </label>
+                        <label for="choice3">
+                            <input type="radio" id="choice3" name="choice" value="3">
+                            <span></span>
+                        </label>
+                        <label for="choice4">
+                            <input type="radio" id="choice4" name="choice" value="4">
+                            <span></span>
+                        </label>  -->
+                    </div>
+                    <div class="quiz__answer">
+                        <button class="next">다음문제</button>
+                    </div>
+                    <div class="quiz__desc"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+   <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:jeongyouna_@naver.com">jeongyouna_@naver.com</a>
+    </footer>
+    <!-- footer -->
+
+    <script>
+            //문제 정보
+        const quizInfo = [
+            {
+                infoType: "정보처리 기능사",
+                infoTime: "2011년 2회",
+                infoNumber: "20110201",
+                infoQuestion: "현재 수행 중에 있는 명령 코드(Code)를 저장하고 있는 임시 저장 장치는?",
+                infoChoice: ["인덱스 레지스터(Index Register)","명령 레지스터(Instrudction Register)","누산기(Accumulator)","메모리 레지스터(Memory Register)"],
+                infoAnswer: "명령 레지스터(Instrudction Register)",
+                infoDesc:"<br>명령 레지스터(Instruction Register) : 현재 실행중인 명령을 기억하는 레지스터 입니다."
+            },{
+                infoType: "정보처리 기능사",
+                infoTime: "2011년 2회",
+                infoNumber: "20110202",
+                infoQuestion: "다음 중 RISC(Reduced Instruction Set Computer)의 설명으로 옳은 것은?",
+                infoChoice:[ "메모리에 대한 액세스는 LOAD와 STORE만으로 한정되어 있다.","명령어마다 다른 수행 사이클을 가지므로 파이프라이닝이 효율적이다.","마이크로 코드에 의해 해석 후 명령어를 수행한다.","주소지정방식이 다양하게 존재한다."],
+                infoAnswer: "메모리에 대한 액세스는 LOAD와 STORE만으로 한정되어 있다.",
+                infoDesc: "<br>RISC의 약자인 Reduced는 제한된으로 해석 될 수도 있습니다.따라서 메모리에 대한 엑세스는 LOAD와 STORE만으로 한정 되어 있다에서 한정 이라는 말과 Reduced의 뜻이랑 같습니다."
+            },{
+                infoType: "정보처리 기능사",
+                infoTime: "2011년 2회",
+                infoNumber: "20110203",
+                infoQuestion: "클록펄스에 의해서 기억된 내용을 한 자리씩 우측이나 좌측으로 이동시키는 레지스터는?",
+                infoChoice: ["시프트 레지스터", "범용 레지스터", "베이스 레지스터","인덱스 레지스터"],
+                infoAnswer: "시프트 레지스터",
+                infoDesc: "<br>시프트(shift)의 뜻은 '이동시키다'로 우측이나 좌측으로 이동시키는 레지스터와 뜻이 같습니다."
+            },{    
+                infoType: "정보처리 기능사",
+                infoTime: "2011년 2회",
+                infoNumber: "20110204",
+                infoQuestion: "중앙처리장치(CPU)에 해당하는 부분을 하나의 대규모 집적회로의 칩에 내장시켜 기능을 수행하게 하는 것은?",
+                infoChoice: ["마이크로프로세서","컴파일러","소프트웨어","레지스터"],
+                infoAnswer: "마이크로프로세서",
+                infoDesc: "<br>마이크로프로세서 : 중앙처리장치에 해당하는 부분을 하나의 대규모 집적회로의 칩에 내장시켜 기능을 수행하게 하는 것입니다."
+            },{
+                infoType: "정보처리 기능사",
+                infoTime: "2011년 2회",
+                infoNumber: "20110205",
+                infoQuestion: "다음에 실행할 명령어의 번지를 기억하는 레지스터는?",
+                infoChoice: ["Program Counter","Memory Address Register","Instruction Register","Processor Register",],
+                infoAnswer: "Instruction Register",
+                infoDesc: "<br>레지스터MAR : 번지(주소)<br>기억MBR : 버퍼(임시기억)<br>IR : 명령어레지스터(명령어를 읽어서 저장)<br>PC : 프로그램카운터(다음수행 명령번지 기억)<br>명령어해독기 : IR 내용 해독<br>ACC : 누산기(연산결과 일시(임시)저장)<br>데이터레지스터 : 데이터 임시저장 <br>상태 레지스터 : CPU상태 저장(PSW)<br>보수기 : 보수로 바꾸는 장치 "
+            },{
+                infoType: "정보처리 기능사",
+                infoTime: "2011년 2회",
+                infoNumber: "20110206",
+                infoQuestion: "8비트짜리 레지스터 A와 B에 각각 11010101과 11110000이 들어 있다. 레지스터 A의 내용이 00100101로 바뀌었다면 두 레지스터 A, B 사이에 수행된 논리연산은?",
+                infoChoice: ["Exclusive-OR","MAND 연산","OR 연산","NOR 연산",],
+                infoAnswer: "OR 연산",
+                infoDesc: "<br>XOR : 서로 다르면 1 같으면 0AND : 모두 1 일때만 1OR: 둘중에 한개라도 1 이면 1NOR : OR 결과와 반대, 모두 0 일때만 1"
+            }
+        ];
+                
+        //선택자
+        const quizWrap = document.querySelector(".quiz__wrap");
+        const quizTitle = quizWrap.querySelector(".quiz__title");
+        const quizChoice = quizWrap.querySelector(".quiz__choice");
+        const quizQuestion = quizWrap.querySelector(".quiz__question");
+        // document.querySelector(".quiz__title").innerHTML = quizInfo[0].infoType
+        // document.querySelector(".quiz__title").innerHTML = quizInfo[0].infoTime
+        quizTitle.textContent = quizInfo[0].infoType;
+        const dogWrap = quizWrap.querySelector(".dog__wrap");
+        const quizAnswer = quizWrap.querySelector(".quiz__answer");
+        const quizNext = quizWrap.querySelector(".quiz__answer .next");
+        const quizDesc = quizWrap.querySelector(".quiz__desc");
+        const quizlength = quizWrap.querySelector(".seacrh__info span");
+        
+
+        let quizCount = 0;
+        let quizScore = 0;
+
+        // 문제 출력
+        const updateQuiz = (index,) => {
+            let typeTag = `
+                <span>${quizInfo[index].infoType}</sapn>
+                <em>${quizInfo[index].infoTime}</em>
+            `;
+            let questionTag = `
+                <em>${index+1}</em>.
+                <span>${quizInfo[index].infoQuestion}</span>
+            `;
+            let choiceTag = `
+                <label for="choice1">
+                    <input type="radio" id="choice1" name="choice" value="1">
+                    <span>${quizInfo[index].infoChoice[0]}</span>
+                </label>
+                <label for="choice2">
+                    <input type="radio" id="choice2" name="choice" value="2">
+                    <span>${quizInfo[index].infoChoice[1]}</span>
+                </label>
+                <label for="choice3">
+                    <input type="radio" id="choice3" name="choice" value="3">
+                    <span>${quizInfo[index].infoChoice[2]}</span>
+                </label>
+                <label for="choice4">
+                    <input type="radio" id="choice4" name="choice" value="4">
+                    <span>${quizInfo[index].infoChoice[3]}</span>
+                </label>
+                
+            `;
+            let descTag = `
+                정답은${quizInfo[index].infoAnswer}입니다.<br>
+                ${quizInfo[index].infoDesc}
+            `;
+
+            let lengthTag = `
+                ${quizInfo.length-index} 문제가 남았습니다.
+            `;
+
+            quizTitle.innerHTML = typeTag;
+            quizQuestion.innerHTML = questionTag;
+            quizChoice.innerHTML = choiceTag;
+            quizDesc.innerHTML = descTag;
+            quizlength.innerHTML = lengthTag;
+    
+
+            // 보기 선택자 
+            const quizChoiceSpan = quizWrap.querySelectorAll(".quiz__choice span");
+            const quizChoiceInput = quizWrap.querySelectorAll(".quiz__choice input");
+            
+            // quizChoiceSpan.forEach((span, num) => {
+            //     span.setAttribute("onclick", "choiceSelected(this)"); //원클릭할 때 ddd라는 함수를 실행시켜라
+            // });
+
+            for(let i=0; i<quizChoiceSpan.length; i++){
+                quizChoiceSpan[i].setAttribute("onclick", "choiceSelected(this)");
+                // quizChoiceInput[i].disabled = "true";
+            }
+
+            // 다음 버튼 숨기기, 해설 숨기기
+            quizAnswer.style.display = "none";
+            quizDesc.style.display = "none";
+
+        };
+        updateQuiz(quizCount);
+
+        // 객관식 선택
+        function choiceSelected(answer){
+            let userAnswer = answer.textContent;                    //사용자 정답
+            let currentAnswer = quizInfo[quizCount].infoAnswer;     //문제 정답 
+
+            if(userAnswer == currentAnswer){
+                console.log("정답입니다."); 
+                dogWrap.classList.add("like");
+            } else {
+                console.log("오답입니다.");
+                dogWrap.classList.add("dislike");
+            };
+
+            if(quizInfo.length - quizCount == 1) {
+                alert(quizScore + "개 맞았습니다. 점수는" + Math.ceil((quizScore/quizInfo.length)*100) + "점 입니다.")    
+            }
+
+            // 다음 버튼, 해설 나타나기
+            quizAnswer.style.display = "block";
+            quizDesc.style.display = "block";
+            
+        }
+        
+        // 정답 확인
+        quizNext.addEventListener("click", () => {
+            quizCount++;
+            updateQuiz(quizCount);
+
+            dogWrap.classList.remove("like", "dislike");
+        
+        });
+
+        
+
+    </script>
+</body>
+</html>
