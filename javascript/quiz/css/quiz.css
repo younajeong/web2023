@@ -275,6 +275,13 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }
+.seacrh__info {
+    padding: 20px;
+    text-align: center;
+    font-family: 'suncheon';
+    font-size: 20px;
+    background-color: #fcf016c3;
+}
 /* dog__wrap */
 .dog .tail, 
 .dog .chin, 
@@ -294,7 +301,6 @@
 .dog__wrap {
     position: relative;
 }
-
 .dog__wrap .ture {
     width: 120px;
     height: 120px;

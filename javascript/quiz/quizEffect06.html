@@ -83,6 +83,8 @@
                         <button class="next">다음문제</button>
                     </div>
                     <div class="quiz__desc"></div>
+                    <div class="quiz__info">??점</div>
+                    <div class="quiz__check"><span>?</span>개</div>
                 </div>
             </div>
         </div>
@@ -161,7 +163,7 @@
         const quizNext = quizWrap.querySelector(".quiz__answer .next");
         const quizDesc = quizWrap.querySelector(".quiz__desc");
         const quizlength = quizWrap.querySelector(".seacrh__info span");
-        
+        const quizCheck = quizWrap.querySelector(".quiz__check span");
 
         let quizCount = 0;
         let quizScore = 0;
@@ -203,6 +205,7 @@
             let lengthTag = `
                 ${quizInfo.length-index} 문제가 남았습니다.
             `;
+            
 
             quizTitle.innerHTML = typeTag;
             quizQuestion.innerHTML = questionTag;
@@ -239,21 +242,24 @@
             if(userAnswer == currentAnswer){
                 console.log("정답입니다."); 
                 dogWrap.classList.add("like");
+                quizScore++;
             } else {
                 console.log("오답입니다.");
                 dogWrap.classList.add("dislike");
             };
 
-            if(quizInfo.length - quizCount == 1) {
-                alert(quizScore + "개 맞았습니다. 점수는" + Math.ceil((quizScore/quizInfo.length)*100) + "점 입니다.")    
-            }
-
             // 다음 버튼, 해설 나타나기
             quizAnswer.style.display = "block";
             quizDesc.style.display = "block";
+
+            if(quizInfo.length - quizCount == 1) {
+                document.querySelector(".quiz__info").innerHTML = Math.ceil((quizScore / quizInfo.length) * 100 )+ "점";
+                quizCheck.innerHTML = quizScore;
+            }
+
             
         }
-        
+
         // 정답 확인
         quizNext.addEventListener("click", () => {
             quizCount++;
@@ -261,9 +267,7 @@
 
             dogWrap.classList.remove("like", "dislike");
         
-        });
-
-        
+        });    
 
     </script>
 </body>
