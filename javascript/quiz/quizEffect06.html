@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>퀴즈 이펙트06</title>
+    <title>퀴즈 이펙트06 - 슬라이드 유형</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/quiz.css">
@@ -20,6 +20,8 @@
             <li><a href="quizEffect04.html">4</a></li>
             <li><a href="quizEffect05.html">5</a></li>
             <li class="active"><a href="quizEffect06.html">6</a></li>
+            <li><a href="quizEffect07.html">7</a></li>
+
         </ul>
     </header>
     <!--//header-->
@@ -33,12 +35,13 @@
                 <div class="quiz__main">
                     <div class="quiz__question"></div>
                     <div class="quiz__view">
-                        <div class='dog__wrap'>
-                            <div class="seacrh__info">
+                        <div class="dog__wrap">
+                            <div class="search__info">
                                 <span></span>
                             </div>
-                            <div class="ture">정답입니다!</div>
+                            <div class="true"></div>  
                             <div class="false">틀렸습니다!</div>
+                            <div class="count"></div>
                             <div class='card-container'>
                                     <div class='dog'>
                                         <div class='head'>
@@ -97,7 +100,7 @@
     <!-- footer -->
 
     <script>
-            //문제 정보
+        //문제 정보
         const quizInfo = [
             {
                 infoType: "정보처리 기능사",
@@ -157,19 +160,22 @@
         const quizQuestion = quizWrap.querySelector(".quiz__question");
         // document.querySelector(".quiz__title").innerHTML = quizInfo[0].infoType
         // document.querySelector(".quiz__title").innerHTML = quizInfo[0].infoTime
-        quizTitle.textContent = quizInfo[0].infoType;
+        
         const dogWrap = quizWrap.querySelector(".dog__wrap");
+        const dogWrapCount = quizWrap.querySelector(".dog__wrap .count");
         const quizAnswer = quizWrap.querySelector(".quiz__answer");
         const quizNext = quizWrap.querySelector(".quiz__answer .next");
         const quizDesc = quizWrap.querySelector(".quiz__desc");
-        const quizlength = quizWrap.querySelector(".seacrh__info span");
+        // const quizLength = quizWrap.querySelector(".search__info span");
         const quizCheck = quizWrap.querySelector(".quiz__check span");
-
-        let quizCount = 0;
-        let quizScore = 0;
-
+        let quizCount = 0;//퀴즈번호
+        let quizScore = 0;//현재점수
+        // document.querySelector(".quiz__title").innerHTML = quizInfo[0].infoType
+        // document.querySelector(".quiz__title").innerHTML = quizInfo[0].infoTime
+         quizTitle.textContent = quizInfo[0].infoType;
+        
         // 문제 출력
-        const updateQuiz = (index,) => {
+        const updateQuiz = (index) => {
             let typeTag = `
                 <span>${quizInfo[index].infoType}</sapn>
                 <em>${quizInfo[index].infoTime}</em>
@@ -194,25 +200,23 @@
                 <label for="choice4">
                     <input type="radio" id="choice4" name="choice" value="4">
                     <span>${quizInfo[index].infoChoice[3]}</span>
-                </label>
-                
+                </label>       
             `;
             let descTag = `
-                정답은${quizInfo[index].infoAnswer}입니다.<br>
+                정답은 ${quizInfo[index].infoAnswer}입니다.<br>
                 ${quizInfo[index].infoDesc}
             `;
-
             let lengthTag = `
-                ${quizInfo.length-index} 문제가 남았습니다.
+                총 ${quizInfo.length}문제 /${quizInfo.length - index-1} 문제 남았습니다.
             `;
-            
-
             quizTitle.innerHTML = typeTag;
             quizQuestion.innerHTML = questionTag;
             quizChoice.innerHTML = choiceTag;
             quizDesc.innerHTML = descTag;
-            quizlength.innerHTML = lengthTag;
-    
+
+            let quizLength = quizInfo.length - quizCount;
+            dogWrapCount.innerHTML = "총" + quizLength + "문제 중에" + (quizLength-1) + "문제 남았습니다.";
+            
 
             // 보기 선택자 
             const quizChoiceSpan = quizWrap.querySelectorAll(".quiz__choice span");
@@ -248,17 +252,24 @@
                 dogWrap.classList.add("dislike");
             };
 
+        
             // 다음 버튼, 해설 나타나기
             quizAnswer.style.display = "block";
             quizDesc.style.display = "block";
-
-            if(quizInfo.length - quizCount == 1) {
-                document.querySelector(".quiz__info").innerHTML = Math.ceil((quizScore / quizInfo.length) * 100 )+ "점";
+            if(quizInfo.length - quizCount == 1){
+                document.querySelector(".quiz__info").innerHTML = Math.ceil((quizScore / quizInfo.length)*100)+"점";
                 quizCheck.innerHTML = quizScore;
             }
-
-            
-        }
+            let countLast = Math.ceil((quizScore/quizInfo.length)*100);
+            let countResult = (countLast > 60) ? "합격" : "불합격";
+            //마지막 문제일 때
+            if(quizCount == quizInfo.length-1){
+                quizAnswer.style.display = "none";
+                dogWrapCount.innerHTML = "총" +quizScore+ "문제를 맞추었습니다. 점수는" +countLast+ "입니다." + countResult + "입니다.";
+            }   
+            // console.log("quizCount : " + quizCount)
+            // console.log("quizInfo.length : " + quizInfo.length)
+        };
 
         // 정답 확인
         quizNext.addEventListener("click", () => {
