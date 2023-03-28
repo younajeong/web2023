@@ -98,7 +98,7 @@
 @media (max-width: 600px) {
     .imgtext__inner .img {
         width: 100%;
-        margin-bottom: 3px;
+        margin-bottom: 3%;
     }
     .imgtext__inner .text h3 {
         font-size: 30px;
