@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 이벤트1</title>
+</head>
+    <style>
+        .wrap {      
+            width: 1200px;
+        }
+        .wrap img {
+            margin: 0 auto;
+            display: block;
+            box-sizing: border-box;
+            object-fit: cover;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+<body>
+    <div class="wrap">
+        
+        <img src="img/mouseEffect01-min.jpg">
+    </div>
+</body>
+    <script>
+
+        const mouse = document.querySelector(".wrap img");
+            document.querySelector(".wrap img").addEventListener("mouseover",()=>{
+                mouse.src = "img/mouseEffect01-min.jpg"
+            })
+            document.querySelector(".wrap img").addEventListener("mouseout",()=>{
+                mouse.src = "img/mouseEffect02-min.jpg"
+            })
+    </script>
+</html>
