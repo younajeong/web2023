@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코딩공부</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;         
+        }
+        ul,li,ol {
+            list-style: none;
+        }
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        #header img {
+            width: 100px;
+        }
+        #header ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        #header ul li:last-child {
+            margin-right: 0;
+        }
+        #benner {
+            padding-top: 20px;
+        }
+        #benner img {
+            width: 100%;
+        }
+        #section {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+        #section .not1 {
+            width: 49%;
+            border: 1px solid #ddd;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .not1 h3 {
+            font-size: 30px;
+        }
+        .not1 li {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            font-size: 20px;
+        }
+        .not1 li span {
+            display: inline-block;
+            text-align: right;
+        }
+        #section .not2 {
+            width: 49%;
+        }
+        #card h3 {
+            margin: 20px 0;
+        }
+        .card__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        .card__inner div {
+            width: 24%;   
+        }
+        .card__inner div strong {
+            display: inline-block;
+            padding-top: 20px;
+            color: #ccc;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div>
+                <img src="img/logo.jpg" alt="롯데월드">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">즐길거리</a></li>
+                    <li><a href="#">요금/우대혜택</a></li>
+                    <li><a href="#">참여프로그램</a></li>
+                    <li><a href="#">이용가이드</a></li>
+                    <li><a href="#">소통서비스</a></li>
+                </ul>
+            </div>
+        </header>
+        <main id="benner">
+            <img src="img/banner.jpg" alt="미라클있수마수">
+        </main>
+        <section id="section">
+            <div class="not1">
+                <h3>롯데월드 소식</h3>
+                <ul>
+                    <li><a href="#">그럴싸진관 미라클</a><span>2018.11.19</span></li>
+                    <li><a href="#">드림스테이지 '힘내 소중한 너'</a><span>2018.11.20</span></li>
+                    <li><a href="#">'힘내 소중한 너'음원발매</a><span>2018.11.21</span></li>
+                    <li><a href="#">이용 요금 조정안내</a><span>2018.11.19</span></li>
+                </ul>
+            </div>
+            <div class="not2">
+                <img src="img/banner02.jpg" alt="온종일혜택ON">
+            </div>
+        </section>
+        <section id="card">
+            <h3>특별한 경험</h3>
+            <div class="card__inner">
+                <div>
+                    <img src="img/notice01.jpg" alt="연간회원안내">
+                    <strong>연간회원안내</strong>
+                </div>
+                <div>
+                    <img src="img/notice02.jpg" alt="프리미엄투어">
+                    <strong>프리미엄투어</strong>
+                </div>
+                <div>
+                    <img src="img/notice03.jpg" alt="공연참여 프로그램">
+                    <strong>공연참여 프로그램</strong>
+                </div>
+                <div>
+                    <img src="img/notice04.jpg" alt="단체프로그램">
+                    <strong>단체프로그램</strong>
+                </div>
+            </div>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+
+</body>
+</html>
