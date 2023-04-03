@@ -3,8 +3,8 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #262626;
-    color: #fff;
+    background-color: #effcd5;
+    color: #000000;
     padding: 10px;
     width: 100%;
     z-index: 1000;
@@ -13,7 +13,7 @@
 }
 #header::before {
     content: '';
-    border: 4px ridge #a3a3a3;
+    border: 4px ridge #000000;
     position: absolute;
     left: 5px;
     top: 5px;
@@ -28,7 +28,7 @@
     position: relative;
 }
 #header h1 a {
-    color: #fff;
+    color: #000000;
 }
 #header h1 em {
     font-size: 0.5em;
@@ -42,15 +42,15 @@
     position: relative;
 }
 #header li a {
-    color: #fff;
+    color: #000000;
     font-family: 'DungGeunMo';
-    border: 1px dashed #fff;
+    border: 1px dashed #49b121;
     display: inline-block;
     padding: 5px;
 }
 #header li.active a,
 #header li a:hover {
-    background-color: #fff;
+    background-color: #fffc68;
     color: #000;
 }
 
@@ -280,7 +280,7 @@
     border: 8px ridge #cacaca;
     margin-bottom: 20px;
     padding: 10px 20px;
-    background-color: #e3edff;
+    background-color: #e1f5c0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -338,8 +338,8 @@
     border-bottom: 4px ridge #cacaca;
 }
 .cbt__info > div:first-child {
-    background-color: #546482;
-    color: #fff;
+    background-color: #e1f5c0;
+    color: #000000;
     padding: 10px 20px;
     text-align: center;
 }
@@ -348,10 +348,10 @@
     right: 160px;
     top: 80px;
     padding-left: 17px;
-    background: #423cff;
+    background: #a5d483;
     padding: 10px 24px 10px 40px;
     border-radius: 40px;
-    color: #fff;
+    color: #000000;
 }
 .cbt__time::before {
     content: '';
@@ -367,11 +367,11 @@
     right: 20px;
     top: 80px;
     padding-left: 20px;
-    background: #ff3c3c;
+    background: #e4e865;
     display: inline-block;
     padding: 10px 27px 10px 44px;
     border-radius: 40px;
-    color: #fff;
+    color: #000000;
 }
 .cbt__submit::before {
     content: '';
@@ -413,14 +413,14 @@
     display: inline-block;
     text-align: center;
     padding: 2px;
-    background-color: #313e55;
+    background-color: #c4e288;
     color: #fff;
     font-family: 'Helvetica Neue';
     margin-right: 10px;
     font-weight: bold;
 }
 .cbt__omr .omr label {
-    box-shadow: 0 0 0 1px #313e55;
+    box-shadow: 0 0 0 1px #040404;
     cursor: pointer;
     line-height: 0.4;
     text-align: center;
@@ -449,7 +449,7 @@
     padding: 0.25em 0.13em;
     transform: translateY(-0.25em);
     width: 20px;
-    color: #313e55;
+    color: #000000;
 }
 .cbt__question {
     font-size: 1.4rem;
