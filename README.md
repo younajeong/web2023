@@ -11,10 +11,10 @@
 퀴즈게임01 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect01.html  
 퀴즈게임02 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect02.html   
 퀴즈게임03 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect03.html     
-퀴즈게임04 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect04.html    
-퀴즈게임05 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect05.html
-퀴즈게임06 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect06.html      
-퀴즈게임07 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect07.html      
+퀴즈게임04 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect04.html       
+퀴즈게임05 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect05.html   
+퀴즈게임06 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect06.html          
+퀴즈게임07 : https://younajeong.github.io/web2023/javascript/quiz/quizEffect07.html         
 
 
 마우스이펙트01 : https://younajeong.github.io/web2023/javascript/mouse/mouseEffect01.html   
