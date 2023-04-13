@@ -23,12 +23,12 @@
 
 검색 이펙트01 : https://younajeong.github.io/web2023/javascript/search/searchEffect.html      
 
-슬라이드 이펙트01 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect01.html
-슬라이드 이펙트02 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect02.html            
-슬라이드 이펙트03 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect03.html
-슬라이드 이펙트04 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect04.html  
-슬라이드 이펙트05 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect05.html  
-슬라이드 이펙트06 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect06.html
+슬라이드 이펙트01 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect01.html   
+슬라이드 이펙트02 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect02.html               
+슬라이드 이펙트03 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect03.html   
+슬라이드 이펙트04 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect04.html     
+슬라이드 이펙트05 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect05.html       
+슬라이드 이펙트06 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect06.html   
 
 
 
