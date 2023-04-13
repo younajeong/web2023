@@ -93,7 +93,7 @@
 <body class="img06 bg06 font06">
     <header id="header">
     <h1>Javascript sliderEffect06</h1>
-    <p>슬라이드 이펙트 : 좌로 움직이기(연속적)</p>
+    <p>슬라이드 이펙트 : 좌로 움직이기(버튼, 닷메뉴)</p>
     <ul>
         <li><a href="sliderEffect01.html">1</a></li>
         <li><a href="sliderEffect02.html">2</a></li>
@@ -101,6 +101,8 @@
         <li><a href="sliderEffect04.html">4</a></li>
         <li><a href="sliderEffect05.html">5</a></li>
         <li class="active"><a href="sliderEffect06.html">6</a></li>
+        <li><a href="sliderEffect07.html">7</a></li>
+
     </ul>
     </header>
 
@@ -187,6 +189,16 @@
                 }
             });
         });
+
+        //닷 클릭 이벤트
+        let dotClick = document.querySelectorAll(".slider__dot .dot")
+        
+        dotClick.forEach((dot, index)=>{
+            dot.addEventListener("click", () => {
+                gotoSlider(index);
+            })
+            
+        })
     </script>
 
     
