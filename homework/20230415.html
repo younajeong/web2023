@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>명언 미션</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url(img/Frame\ 79.jpg);
+        }
+        #result {
+            width: 100%;
+            height: 100vh;
+            display:inline-block;
+            align-items: center;
+            font-size: 25px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="result">
+        <div class="quote"></div>
+        <div class="author"></div>
+    </div>
+</body>
+<script>
+    //선택자
+    const Result = document.querySelector("#result")
+    const Quote = Result.querySelector(".quote")
+    const Author = Result.querySelector(".author")
+
+    const dataresult = (value) => {
+        fetch("./dummy01.json")
+    .then(response => response.json())
+    .then(items => {
+        const rendomIndex = Math.floor(Math.random() * items.length);
+        Quote.textContent = items[rendomIndex].quote;
+        Author.textContent = items[rendomIndex].author;
+    })
+
+    .catch((err) => console.log(err));
+
+    };
+
+    dataresult();
+    setInterval(dataresult, 10000);
+    
+    
+    
+    
+
+
+</script>
+</html>
