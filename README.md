@@ -49,4 +49,5 @@
 애니메이션(우주) : https://younajeong.github.io/web2023/animation/webgl/webgl01.html
 
 #마무리문제
-로또번호: https://younajeong.github.io/web2023/homework/lotto.html
+로또번호: https://younajeong.github.io/web2023/homework/lotto.html.   
+랜덤명언: https://younajeong.github.io/web2023/homework/20230415.html.
