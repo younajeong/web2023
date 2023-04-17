@@ -11,30 +11,46 @@
             padding: 0;
         }
         body {
-            background-image: url(img/Frame\ 79.jpg);
-        }
-        #result {
             width: 100%;
             height: 100vh;
+        }
+        #result img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }    
+        #text {
             display:inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
             align-items: center;
-            font-size: 25px;
-            color: #fff;
+            font-size: 30px;
+            color: #000;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            box-sizing: border-box;
+            background-color: #f8eded58;
+            box-shadow: 0 0 2px inset;
+
         }
     </style>
 </head>
 <body>
     <div id="result">
-        <div class="quote"></div>
-        <div class="author"></div>
+            <img id="image" src="https://source.unsplash.com/random/?flower" alt="랜덤이미지"> 
+        <div id="text">
+            <div class="quote"></div>
+            <div class="author"></div>
+        </div>
     </div>
 </body>
 <script>
     //선택자
     const Result = document.querySelector("#result")
+    const Img = document.querySelector("#image")
     const Quote = Result.querySelector(".quote")
     const Author = Result.querySelector(".author")
 
@@ -45,19 +61,17 @@
         const rendomIndex = Math.floor(Math.random() * items.length);
         Quote.textContent = items[rendomIndex].quote;
         Author.textContent = items[rendomIndex].author;
+
+        fetch('https://source.unsplash.com/random/?flower')
+        .then((response) => {
+            Img.src = response.url;
+        })
+        .catch((err) => console.log(err));
     })
-
     .catch((err) => console.log(err));
-
     };
 
     dataresult();
     setInterval(dataresult, 10000);
-    
-    
-    
-    
-
-
 </script>
 </html>
