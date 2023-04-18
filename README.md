@@ -31,7 +31,7 @@
 슬라이드 이펙트06 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect06.html   
 슬라이드 이펙트07 : https://younajeong.github.io/web2023/javascript/slider/sliderEffect07.html   
 
-페럴렉스 이펙트01 : https://younajeong.github.io/web2023/javascript/parallaxr/parallaxEffect01.html     
+페럴렉스 이펙트01 : https://younajeong.github.io/web2023/javascript/parallax/parallax01.html
 
 
 #사이트   
