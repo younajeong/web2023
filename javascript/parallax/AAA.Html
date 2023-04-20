@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>패럴랙스</title>
+    <link href="https://webfontworld.github.io/recia/ReciaSerifDisplay.css" rel="stylesheet">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "ReciaSerifDisplay";
+    }
+    body {
+        height: 20000px;
+        background-color: #e4ffd0;
+    }
+    .scrollTop {
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        z-index: 1000;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        line-height: 40px;
+        background-color: rgb(249, 245, 11);
+    }
+    .fixed {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    .s1-text1 {
+        font-size: 30vw;
+        line-height: 1;
+        padding-top: 8vw;
+        line-height: 30px;
+    }
+    .s1-text2 {
+        font-size: 40vw;
+        line-height: 1;
+        padding-top: 8vw;
+        text-align: right;
+        padding-left: 50%;
+        padding-right: 20%;
+    }
+    .s1-text3{
+        font-size: 0vw;
+        line-height: 1;
+        padding-top: 4vw;
+        word-break: keep-all;
+    }
+    .s1-text4{
+        font-size: 10vw;
+        line-height: 1;
+        padding-top: 4vw;
+        word-break: keep-all;
+    }
+    .s1-text5{
+        font-size: 0vw;
+        line-height: 1;
+        padding-top: 4vw;
+        word-break: keep-all;
+    }
+    .s1-img1 {
+        width: 250vw;
+        height: 100vh;
+    }
+    .s1-img1 > div {
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .s1-img1 > div > div {
+        width: 19vh;
+        height: 19vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 5px solid#000;
+        filter: saturate(100%);
+    }
+    .s1-img2 {
+        width: 250vw;
+        height: 100vh;  
+    }
+    .s1-img2 > div {
+        height: 20vh;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .s1-img2 > div > div {
+        width: 19vh;
+        height: 19vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 5px solid#000;
+        filter: saturate(100%);
+    } 
+    .s1-img3 {
+        width: 250vw;
+        height: 100vh;  
+    }
+    .s1-img3 > div {
+        height: 20vh;
+        display: flex;
+        padding-top: 150px;
+        
+    }
+    .s1-img3 > div > div {
+        width: 19vh;
+        height: 19vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 5px solid#000;
+        filter: saturate(100%);
+    } 
+
+    .s1-img1-1 > div:first-child {background-image: url(https://siyoenkim.github.io/web2023/assets/ico/icon.jpg);}
+    .s1-img1-1 > div:last-child {background-image: url(https://seolhee313.github.io/web2023/assets/ico/icon.jpg);}
+    
+    .s1-img1-2 > div:first-child {background-image: url(https://kebab000.github.io/web2023/assets/ico/icon01.jpg);}
+    .s1-img1-2 > div:last-child {background-image: url(https://dkseho9121.github.io/web2023/assets/ico/icon01.jpg);}
+    
+    .s1-img1-3 > div:first-child {background-image: url(https://jinyongjang.github.io/web2023/assets/ico/icon01.jpg);}
+    .s1-img1-3 > div:last-child {background-image: url(https://chohena.github.io/web2023/assets/ico/icon01.jpg);}
+    
+    .s1-img1-4 > div:first-child {background-image: url(https://kimdohyun2002.github.io/web2023/assets/ico/icon.jpg);}
+    .s1-img1-4 > div:last-child {background-image: url(https://jhwangwoo.github.io/web2023/assets/ico/icon.jpg);}
+
+    .s1-img1-5 > div:first-child {background-image: url(https://yeodaseul4355.github.io/web2023/assets/ico/icon01.jpg);}
+    .s1-img1-5 > div:last-child {background-image: url(https://hyejeong3283.github.io/web2023/assets/ico/icon%2001.jpg);}
+
+    .s1-img1-6 > div:first-child {background-image: url(https://dkdlelw.github.io/web2023/assets/ico/icon.jpg);}
+    .s1-img1-6 > div:last-child {background-image: url(https://lee3ll.github.io/web2023/assets/ico/icon01.jpg);}
+
+    .s1-img1-7 > div:first-child {background-image: url(https://jo0132.github.io/web2023/assets/ico/icon.jpg);}
+    .s1-img1-7 > div:last-child {background-image: url(https://dlgnsrb227.github.io/web2023/assets/ico/icon.jpg);}
+
+    .s1-img1-8 > div:first-child {background-image: url(https://dongjin6539.github.io/web2023/assets/ico/icon.jpg);}
+    .s1-img1-8 > div:last-child {background-image: url(https://hyeonbeen97.github.io/web2023/assets/ico/icon.jpg);}
+
+    .s1-img1-9 > div:first-child {background-image: url(https://younajeong.github.io/web2023/assets/ico/icon.jpg);}
+    .s1-img1-9 > div:last-child {background-image: url(https://ehcjswo.github.io/web2023/assets/ico/icon.jpg);}
+
+    .s1-img1-10 > div:first-child {background-image: url(https://fitalux.github.io/web2023/assets/ico/icon01.jpg);}
+    .s1-img1-10> div:last-child {background-image: url(https://xlsak5.github.io/testAnGyonam/assets/ico/icon.jpg);}
+
+    .s1-img1-11 > div:first-child {background-image: url(https://daanbi1345.github.io/web2023/assets/ico/icon11.jpg);}
+    .s1-img1-11> div:last-child {background-image: url(https://ture403.github.io/web2023/assets/ico/icon.jpg);}
+
+    .s1-img1-12 > div:first-child {background-image: url(https://leeyanggoo.github.io/web2023/assets/ico/icon1.jpg);}
+    .s1-img1-12 > div:last-child {background-image: url(https://aimeekwon.github.io/web2023/assets/ico/icon.jpg);}
+
+    .s1-img1-13 > div:first-child {background-image: url(https://getgrovy.github.io/web2023/assets/ico/icon01.jpg);}
+    .s1-img1-13 > div:last-child {background-image: url(https://leeyouna21.github.io/web2023/assets/ico/icon01.jpg);}
+
+</style>
+
+</head>
+<body>
+    <div class="scrollTop"></div>
+
+    <section id="section1">
+        <div class="s1-text1 fixed"
+                data-0="font-size: 0vw; opacity:1"
+                data-1000="font-size: 20vw; opacity:1"
+                data-2000="font-size: 0vw; opacity:0"
+            <div
+            >Hello</div>
+        <div class="s1-text2 fixed"
+                data-1500="font-size: 0vw; opacity:1"
+                data-2000="font-size: 20vw; opacity:1"
+                data-2500="font-size: 20vw; opacity:1"
+                data-3000="font-size: 0vw; opacity:0"
+            >Every one</div>
+
+            <div class="s1-text3 fixed"
+                data-2500="font-size: 0vw; transform: translate(-50%, -50%) rotate(0deg)"
+                data-3500="font-size: 10vw; transform: translate(-50%, -50%) rotate(720deg)"
+                data-4000="font-size: 10vw; transform: translate(-50%, -50%) rotate(720deg)"
+                data-4500="font-size: 10vw; transform: translate(-50%, -50%) rotate(720deg)"
+                data-5000="font-size: 10vw; transform: translate(-50%, -50%) rotate(0deg)"
+                data-5500="font-size: 10vw; transform: translate(-50%, -50%) rotate(0deg)"
+                data-6000="font-size: 10vw; transform: translate(-50%, -50%) rotate(0deg)"
+                data-6500="font-size: 10vw; transform: translate(-50%, -50%) rotate(0deg)"
+                data-7000="font-size: 10vw; transform: translate(-50%, -50%) rotate(0deg)"
+                data-7500="font-size: 10vw; transform: translate(-50%, -50%) rotate(0deg)"
+                data-8000="font-size: 0vw; transform: translate(-50%, -50%) rotate(0deg)"
+            >We're coding mate</div>
+
+            <div class="s1-text4 fixed"
+                data-8500="font-size: 0vw; transform: translate(-50%, -50%) rotate(0deg)"
+                data-9000="font-size: 5vw; transform: translate(-50%, -50%) rotate(0deg)"
+                data-10000="font-size: 0vw; transform: translate(-50%, -50%) rotate(0deg)"
+            >❤︎persevere to the end!❤︎</div>      
+                
+
+            <div class="s1-text5 fixed"
+                data-10000="font-size: 0vw; opacity:1"
+                data-11000="font-size: 10vw; opacity:1"
+                data-12000="font-size: 0vw; opacity:0"
+            >Thank U</div>
+
+            <div class="s1-img1 fixed"
+                data-3500="width: 200vw;"
+                data-4500="width: 20vw;"
+                data-5500="width: 1000vw;"
+            >
+                <div class="s1-img1-1">
+                    <div
+                        data-3500="transform: rotate(0deg);"
+                        data-4500="transform: rotate(720deg);"
+                        data-5500="transform: rotate(0deg);"
+                    ></div>
+                    <div></div>
+                </div>
+                
+                <div class="s1-img1-2">
+                    <div></div>
+                    <div
+                        data-3500="transform: rotate(0deg);"
+                        data-4500="transform: rotate(720deg);"
+                        data-5500="transform: rotate(0deg);"
+                    ></div>
+                </div>  
+                <div class="s1-img1-3">
+                    <div
+                        data-3500="transform: rotate(0deg);"
+                        data-4500="transform: rotate(720deg);"
+                        data-5500="transform: rotate(0deg);"
+                    ></div>
+                    <div
+                        data-3500="transform: rotate(720deg);"
+                        data-4500="transform: rotate(0deg);"
+                        data-5500="transform: rotate(720deg);"
+                    ></div>
+                </div>
+                <div class="s1-img1-4">
+                    <div 
+                        data-3500="transform: rotate(0deg);"
+                        data-4500="transform: rotate(720deg);"
+                        data-5500="transform: rotate(0deg);"
+                    ></div>
+                    <div></div>
+                </div>
+                <div class="s1-img1-5">
+                    <div></div>
+                    <div
+                        data-3500="transform: rotate(0deg);"
+                        data-4500="transform: rotate(720deg);"
+                        data-5500="transform: rotate(0deg);"
+                    ></div>
+                </div> 
+            </div> 
+
+            <div class="s1-img2 fixed"
+                data-5500="width: 200vw;"
+                data-6500="width: 20vw;"
+                data-7000="width: 1000vw;"
+            > 
+                <div class="s1-img1-6">
+                    <div
+                        data-5500="transform: rotateY(0deg);"
+                        data-6500="transform: rotateY(180deg);"
+                        data-7000="transform: rotateY(0deg);"
+                    ></div>
+                    <div
+                        data-5500="transform: rotateY(0deg);"
+                        data-6500="transform: rotateY(360deg);"
+                        data-7000="transform: rotateY(0deg);"
+                    ></div>
+                </div>
+                <div class="s1-img1-7">
+                    <div
+                        data-5500="transform: rotateY(0deg);"
+                        data-6500="transform: rotateY(360deg);"
+                        data-7000="transform: rotateY(0deg);"
+                    ></div>
+                    <div
+                        data-5500="transform: rotateY(0deg);"
+                        data-6500="transform: rotateY(180deg);"
+                        data-7000="transform: rotateY(0deg);"
+                    ></div>
+                </div>  
+                <div class="s1-img1-8">
+                    <div
+                        data-5500="transform: rotateY(0deg);"
+                        data-6500="transform: rotateY(180deg);"
+                        data-7000="transform: rotateY(0deg);"
+                    ></div>
+                    <div
+                        data-5500="transform: rotateY(0deg);"
+                        data-6500="transform: rotateY(360deg);"
+                        data-7000="transform: rotateY(0deg);"
+                    ></div>
+                </div>
+                <div class="s1-img1-9">
+                    <div
+                        data-5500="transform: rotateY(0deg);"
+                        data-6500="transform: rotateY(360deg);"
+                        data-7000="transform: rotateY(0deg);"
+                    ></div>
+                    <div
+                        data-5500="transform: rotateY(0deg);"
+                        data-6500="transform: rotateY(180deg);"
+                        data-7000="transform: rotateY(0deg);"
+                    ></div>
+                </div>
+                <div class="s1-img1-10">
+                    <div
+                        data-5500="transform: rotateY(0deg);"
+                        data-6500="transform: rotateY(180deg);"
+                        data-7000="transform: rotateY(0deg);"
+                    ></div>
+                    <div
+                        data-5500="transform: rotateY(0deg);"
+                        data-6500="transform: rotateY(360deg);"
+                        data-7000="transform: rotateY(0deg);"
+                    ></div>
+                </div>
+            
+                
+            </div> 
+
+            <div class="s1-img3 fixed"
+                data-6000="width: 200vw;"
+                data-7000="width: 20vw;"
+                data-8000="width: 1000vw;"
+                > 
+                    <div class="s1-img1-11">
+                        <div
+                        data-5500=" transform: scale(0.85) rotateX(0deg);"
+                        data-6500=" transform: scale(0.85) rotateX(180deg);"
+                        data-7000=" transform: scale(0.85) rotateX(0deg);"
+                        ></div>
+                        <div
+                            data-5500=" transform: scale(0.85) rotateX(0deg);"
+                            data-6500=" transform: scale(0.85) rotateX(360deg);"
+                            data-7000=" transform: scale(0.85) rotateX(0deg);"
+                        ></div>
+                    </div>
+                    <div class="s1-img1-12">
+                        <div
+                            data-5500=" transform: scale(0.85) rotateX(0deg);"
+                            data-6500=" transform: scale(0.85) rotateX(360deg);"
+                            data-7000=" transform: scale(0.85) rotateX(0deg);"
+                        ></div>
+                        <div
+                            data-5500=" transform: scale(0.85) rotateX(0deg);"
+                            data-6500=" transform: scale(0.85) rotateX(180deg);"
+                            data-7000=" transform: scale(0.85) rotateX(0deg);"
+                        ></div>
+                    </div>  
+                    <div class="s1-img1-13">
+                        <div
+                            data-5500=" transform: scale(0.85) rotateX(0deg);"
+                            data-6500=" transform: scale(0.85) rotateX(180deg);"
+                            data-7000=" transform: scale(0.85) rotateX(0deg);"
+                        ></div>
+                        <div
+                            data-5500=" transform: scale(0.85) rotateX(0deg);"
+                            data-6500=" transform: scale(0.85) rotateX(360deg);"
+                            data-7000=" transform: scale(0.85) rotateX(0deg);"
+                        ></div>
+                    </div> 
+            </div> 
+
+
+
+                
+            
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script type="text/javascript">
+        let s = skrollr.init();
+        window.addEventListener("scroll", () => {
+            let scrollTop = window.pageYOffset || window.scrollY;
+            document.querySelector(".scrollTop").innerText = parseInt(scrollTop);
+        });
+    </script>
+</body>
+</html>
