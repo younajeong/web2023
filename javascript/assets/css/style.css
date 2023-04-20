@@ -34,14 +34,14 @@
     #header h1 a {
         font-size: 80px;
         font-weight: 800;
-        color: #012a4a;
+        color: #caec9a;
     }
     #header nav ul li {
         display: inline;
     }
     #header nav ul li a {
-        border: 1px dashed #012a4a;
-        color: #284b63;
+        border: 1px dashed #6ca92e;
+        color: #070707;
         padding: 10px 20px;
         margin: 6px 3px;
         display: inline-block;
@@ -49,11 +49,11 @@
         transition: background-color 0.3s, color 0.3s;
     }
     #header nav ul li a:hover {
-        background-color: #012a4a;
-        color: #fff;
+        background-color: #caec9a;
+        color: #ffffff;
     }
     #header nav ul li.active a {
-        background-color: #284b63;
+        background-color: #caec9a;
         color: #fff;
     }
     @media (max-width: 600px){
